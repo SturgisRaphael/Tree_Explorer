@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/main.cpp
+iostream
+-
+utils/Tree.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/Tree.h
+
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/Tree.h
+string
+-
+vector
+-
+ostream
+-
+

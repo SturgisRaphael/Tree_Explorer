@@ -213,6 +213,60 @@ algortihms/LinearProgrammingSolver.cpp.s:
 	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.s
 .PHONY : algortihms/LinearProgrammingSolver.cpp.s
 
+algortihms/optimalSolver.o: algortihms/optimalSolver.cpp.o
+
+.PHONY : algortihms/optimalSolver.o
+
+# target to build an object file
+algortihms/optimalSolver.cpp.o:
+	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/optimalSolver.cpp.o
+.PHONY : algortihms/optimalSolver.cpp.o
+
+algortihms/optimalSolver.i: algortihms/optimalSolver.cpp.i
+
+.PHONY : algortihms/optimalSolver.i
+
+# target to preprocess a source file
+algortihms/optimalSolver.cpp.i:
+	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/optimalSolver.cpp.i
+.PHONY : algortihms/optimalSolver.cpp.i
+
+algortihms/optimalSolver.s: algortihms/optimalSolver.cpp.s
+
+.PHONY : algortihms/optimalSolver.s
+
+# target to generate assembly for a file
+algortihms/optimalSolver.cpp.s:
+	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/optimalSolver.cpp.s
+.PHONY : algortihms/optimalSolver.cpp.s
+
+glpk/glpk_interface.o: glpk/glpk_interface.cpp.o
+
+.PHONY : glpk/glpk_interface.o
+
+# target to build an object file
+glpk/glpk_interface.cpp.o:
+	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o
+.PHONY : glpk/glpk_interface.cpp.o
+
+glpk/glpk_interface.i: glpk/glpk_interface.cpp.i
+
+.PHONY : glpk/glpk_interface.i
+
+# target to preprocess a source file
+glpk/glpk_interface.cpp.i:
+	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.i
+.PHONY : glpk/glpk_interface.cpp.i
+
+glpk/glpk_interface.s: glpk/glpk_interface.cpp.s
+
+.PHONY : glpk/glpk_interface.s
+
+# target to generate assembly for a file
+glpk/glpk_interface.cpp.s:
+	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.s
+.PHONY : glpk/glpk_interface.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -284,6 +338,12 @@ help:
 	@echo "... algortihms/LinearProgrammingSolver.o"
 	@echo "... algortihms/LinearProgrammingSolver.i"
 	@echo "... algortihms/LinearProgrammingSolver.s"
+	@echo "... algortihms/optimalSolver.o"
+	@echo "... algortihms/optimalSolver.i"
+	@echo "... algortihms/optimalSolver.s"
+	@echo "... glpk/glpk_interface.o"
+	@echo "... glpk/glpk_interface.i"
+	@echo "... glpk/glpk_interface.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

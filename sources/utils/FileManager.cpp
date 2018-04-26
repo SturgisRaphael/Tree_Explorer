@@ -6,6 +6,7 @@
 #include <sstream>
 #include <iostream>
 #include "FileManager.h"
+#include "../structures/Tree.h"
 
 AgentTreeExplorationInstance FileManager::readInstanceFromFile(string path) {
 	int k = -1, b = -1;
@@ -25,8 +26,8 @@ AgentTreeExplorationInstance FileManager::readInstanceFromFile(string path) {
 
 
 	std::getline(infile, line);
-	auto *root = new SimpleTree(line);
-	SimpleTree *current_parent = root, *tmp = root;
+	Tree<int>* root = new Tree<int>(line);
+	Tree<int> *current_parent = root, *tmp = root;
 
 	int current_level = 0, i;
     while (std::getline(infile, line)) {
@@ -54,7 +55,7 @@ AgentTreeExplorationInstance FileManager::readInstanceFromFile(string path) {
 	    }
 	    else{
 	    	for(current_level; current_level > i; current_level--)
-	    		current_parent = current_parent->getParent();
+	    		current_parent = current_parent->getEdgeToParent()->getParent();
 		    current_parent->addChild(line.substr(
 				    static_cast<unsigned long>(i + 1)));
 		    tmp = current_parent->getChild(line.substr(
@@ -62,7 +63,7 @@ AgentTreeExplorationInstance FileManager::readInstanceFromFile(string path) {
 	    }
     }
 
-	return AgentTreeExplorationInstance(*root, k, b);
+	return AgentTreeExplorationInstance(root, k, b);
 }
 
 void FileManager::writeInstanceToFile(string path,

@@ -1,12 +1,3 @@
-//
-// Created by raphael on 4/19/18.
-//
-
-#ifndef TREE_EXPLORER_AGENTTREEEXPLORATIONINSTANCE_H
-#define TREE_EXPLORER_AGENTTREEEXPLORATIONINSTANCE_H
-
-#include <ostream>
-#include "SimpleTree.h"
 /**
  * \class AgentTreeExplorationInstance
  *
@@ -26,9 +17,16 @@
  *
  */
 
+#ifndef TREE_EXPLORER_AGENTTREEEXPLORATIONINSTANCE_H
+#define TREE_EXPLORER_AGENTTREEEXPLORATIONINSTANCE_H
+
+#include <ostream>
+#include "../structures/Tree.h"
+
+
 class AgentTreeExplorationInstance {
 private:
-	SimpleTree tree;        ///Tree to explore
+	Tree<int> *tree;        ///Tree to explore
 	int numberOfAgents;     ///Number of agents
 	int startingBattery;    ///Battery at root for all agents
 public:
@@ -38,16 +36,13 @@ public:
 	 * @param numberOfAgents
 	 * @param startingBattery
 	 */
-	AgentTreeExplorationInstance(const SimpleTree &tree, int numberOfAgents,
-	                             int startingBattery) : tree(
-			tree), numberOfAgents(numberOfAgents), startingBattery(
-			startingBattery) {};
+	AgentTreeExplorationInstance(Tree<int> *tree, int numberOfAgents, int startingBattery) : tree(tree),numberOfAgents(numberOfAgents), startingBattery(startingBattery) {}
 
 	/**
 	 * Simple getter
 	 * @return Tree
 	 */
-	const SimpleTree &getTree() const {
+	Tree<int> * getTree() const {
 		return tree;
 	}
 
@@ -73,7 +68,7 @@ public:
 	 * @return true/false
 	 */
 	bool operator==(const AgentTreeExplorationInstance &rhs) const {
-		return tree == rhs.tree &&
+		return *tree == *rhs.tree &&
 		       numberOfAgents == rhs.numberOfAgents &&
 		       startingBattery == rhs.startingBattery;
 	}
@@ -85,8 +80,12 @@ public:
 	friend ostream &
 	operator<<(ostream &os, const AgentTreeExplorationInstance &instance) {
 		os << instance.numberOfAgents << " " << instance.startingBattery << "\n"
-		   << instance.tree << "\n";
+		   << *instance.tree << "\n";
 		return os;
+	}
+
+	virtual ~AgentTreeExplorationInstance() {
+		delete tree;
 	}
 };
 #endif //TREE_EXPLORER_AGENTTREEEXPLORATIONINSTANCE_H

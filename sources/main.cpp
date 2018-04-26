@@ -4,11 +4,28 @@
 
 
 #include <iostream>
-#include "utils/Tree.h"
+#include "algortihms/LinearProgrammingSolver.h"
+#include "utils/FileManager.h"
 
 int main(int argc, char* argv[])
 {
-	Tree<int> t, *c = new Tree<int>("child", nullptr);
-	t.addChild(c, 10);
-	cout << t;
+	Tree<int> *tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->getChild("2")->addChild("2.1");
+	tree->getChild("2")->addChild("2.2");
+	tree->addChild("3");
+	tree->addChild("4");
+
+	AgentTreeExplorationInstance atei = AgentTreeExplorationInstance
+			(tree, 2, 1);
+
+	LinearProgrammingSolver solver = LinearProgrammingSolver();
+	solver.solver(&atei);
+	solver.getLp().writeMPS("mps.txt");
+	solver.getLp().writeSol("sol.txt");
+	solver.getLp().printSol("print.txt");
+
+
+	return 0;
 }

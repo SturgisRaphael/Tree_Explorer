@@ -11,15 +11,16 @@ TEST(Read, test1) {
 			FileManager::readInstanceFromFile("../data/testFiles/test1.1.txt");
 
 
-	SimpleTree tree = SimpleTree("root");
-	tree.addChild("1");
-	tree.addChild("2");
-	tree.addChild("3");
-	tree.getChild("3")->addChild("3.1");
-	tree.getChild("3")->addChild("3.2");
+	Tree<int>* tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->addChild("3");
+	tree->getChild("3")->addChild("3.1");
+	tree->getChild("3")->addChild("3.2");
+
 	AgentTreeExplorationInstance comp =
 			AgentTreeExplorationInstance(tree, 3, 2);
-	ASSERT_TRUE(comp == atei);
+	ASSERT_EQ(comp, atei);
 }
 
 TEST(Read, test2){
@@ -27,17 +28,17 @@ TEST(Read, test2){
 			FileManager::readInstanceFromFile("../data/testFiles/test1.2.txt");
 
 
-	SimpleTree tree = SimpleTree("root");
-	tree.addChild("1");
-	tree.addChild("2");
-	tree.getChild("2")->addChild("2.1");
-	tree.getChild("2")->getChild("2.1")->addChild("2.1.1");
-	tree.getChild("2")->getChild("2.1")->addChild("2.1.2");
-	tree.getChild("2")->addChild("2.2");
-	tree.getChild("2")->getChild("2.2")->addChild("2.2.1");
-	tree.addChild("3");
-	tree.addChild("4");
-	tree.getChild("4")->addChild("4.1");
+	Tree<int>* tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->getChild("2")->addChild("2.1");
+	tree->getChild("2")->getChild("2.1")->addChild("2.1.1");
+	tree->getChild("2")->getChild("2.1")->addChild("2.1.2");
+	tree->getChild("2")->addChild("2.2");
+	tree->getChild("2")->getChild("2.2")->addChild("2.2.1");
+	tree->addChild("3");
+	tree->addChild("4");
+	tree->getChild("4")->addChild("4.1");
 	AgentTreeExplorationInstance comp =
 			AgentTreeExplorationInstance(tree, 4, 10);
 	ASSERT_TRUE(comp == atei);
@@ -49,7 +50,7 @@ TEST(Read, test3) {
 			FileManager::readInstanceFromFile("../data/testFiles/test1.3.txt");
 
 
-	SimpleTree tree = SimpleTree("root");
+	Tree<int>* tree = new Tree<int>("root");
 	AgentTreeExplorationInstance comp =
 			AgentTreeExplorationInstance(tree, 1, 1);
 	ASSERT_TRUE(comp == atei);
@@ -68,12 +69,12 @@ TEST(Read, bad_file_2) {
 }
 
 TEST(Write, instance1) {
-	SimpleTree tree = SimpleTree("root");
-	tree.addChild("1");
-	tree.addChild("2");
-	tree.addChild("3");
-	tree.getChild("3")->addChild("3.1");
-	tree.getChild("3")->addChild("3.2");
+	Tree<int>* tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->addChild("3");
+	tree->getChild("3")->addChild("3.1");
+	tree->getChild("3")->addChild("3.2");
 	AgentTreeExplorationInstance comp =
 			AgentTreeExplorationInstance(tree, 3, 2);
 

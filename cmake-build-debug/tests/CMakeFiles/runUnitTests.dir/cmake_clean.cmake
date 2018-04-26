@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/runUnitTests.dir/gtest.cpp.o"
   "CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o"
+  "CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o"
+  "CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o"
+  "CMakeFiles/runUnitTests.dir/glpk/glpk_interface_test.cpp.o"
   "runUnitTests.pdb"
   "runUnitTests"
 )

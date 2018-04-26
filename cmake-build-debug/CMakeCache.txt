@@ -342,8 +342,8 @@ Tree_Explorer_BINARY_DIR:STATIC=/home/raphael/Master-informatique/M1/Stage/Tree_
 //Value Computed by CMake
 Tree_Explorer_SOURCE_DIR:STATIC=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer
 
-//Dependencies for target
-core_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+core_LIB_DEPENDS:STATIC=general;glpk;
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/tests/lib/googletest-master/googlemock

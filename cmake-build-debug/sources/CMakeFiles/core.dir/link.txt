@@ -1,2 +1,2 @@
-/usr/bin/ar qc libcore.a  CMakeFiles/core.dir/utils/FileManager.cpp.o CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o
+/usr/bin/ar qc libcore.a  CMakeFiles/core.dir/utils/FileManager.cpp.o CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o CMakeFiles/core.dir/glpk/glpk_interface.cpp.o CMakeFiles/core.dir/algortihms/optimalSolver.cpp.o
 /usr/bin/ranlib libcore.a

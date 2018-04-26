@@ -306,6 +306,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/Algorithms/LinearProgrammingSolver_test.cpp">
+			<Option target="runUnitTests"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/glpk/glpk_interface_test.cpp">
+			<Option target="runUnitTests"/>
+		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/gtest.cpp">
 			<Option target="runUnitTests"/>
 		</Unit>
@@ -320,6 +326,9 @@
 		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/lib/googletest-master/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/structures/Tree_test.cpp">
+			<Option target="runUnitTests"/>
 		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/utils/FileManager_test.cpp">
 			<Option target="runUnitTests"/>

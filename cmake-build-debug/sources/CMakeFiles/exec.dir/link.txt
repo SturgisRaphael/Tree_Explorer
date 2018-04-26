@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/exec.dir/main.cpp.o  -o exec libcore.a 
+/usr/bin/c++  -g   CMakeFiles/exec.dir/main.cpp.o  -o exec -lglpk libcore.a -lglpk 

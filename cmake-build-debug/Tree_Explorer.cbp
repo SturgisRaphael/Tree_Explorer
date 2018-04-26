@@ -464,14 +464,41 @@
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h">
 			<Option target="core"/>
 		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/optimalSolver.cpp">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/optimalSolver.h">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.cpp">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h">
+			<Option target="core"/>
+		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/main.cpp">
 			<Option target="exec"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/BinaryTree.h">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h">
+			<Option target="core"/>
 		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.cpp">
 			<Option target="core"/>
 		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.h">
 			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/Algorithms/LinearProgrammingSolver_test.cpp">
+			<Option target="runUnitTests"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/glpk/glpk_interface_test.cpp">
+			<Option target="runUnitTests"/>
 		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/gtest.cpp">
 			<Option target="runUnitTests"/>
@@ -487,6 +514,9 @@
 		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/lib/googletest-master/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/structures/Tree_test.cpp">
+			<Option target="runUnitTests"/>
 		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/utils/FileManager_test.cpp">
 			<Option target="runUnitTests"/>

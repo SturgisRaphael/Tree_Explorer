@@ -29,6 +29,8 @@ tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o:
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/structures/Edge.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/structures/Tree.h
+tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/structures/Tripple.h
+tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/structures/Tupple.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../tests/Algorithms/LinearProgrammingSolver_test.cpp
 
 tests/CMakeFiles/runUnitTests.dir/glpk/glpk_interface_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
@@ -80,33 +82,6 @@ tests/CMakeFiles/runUnitTests.dir/gtest.cpp.o: ../tests/lib/googletest-master/go
 tests/CMakeFiles/runUnitTests.dir/gtest.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 tests/CMakeFiles/runUnitTests.dir/gtest.cpp.o: ../tests/gtest.cpp
 
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-message.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-param-test.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-printers.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-test-part.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest_prod.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-linked_ptr.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-param-util-generated.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../sources/structures/BinaryTree.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../sources/structures/Edge.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../sources/structures/Tree.h
-tests/CMakeFiles/runUnitTests.dir/structures/BinaryTree_test.cpp.o: ../tests/structures/BinaryTree_test.cpp
-
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-message.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-param-test.h
@@ -131,6 +106,7 @@ tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/lib/googl
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../sources/structures/Edge.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../sources/structures/Tree.h
+tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../sources/structures/Tupple.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/structures/Tree_test.cpp
 
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
@@ -159,6 +135,7 @@ tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/struc
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/structures/Edge.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/structures/Tree.h
+tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/structures/Tupple.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/utils/FileManager.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../tests/utils/FileManager_test.cpp
 

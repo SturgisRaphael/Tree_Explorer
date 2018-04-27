@@ -78,10 +78,10 @@ TEST(Write, instance1) {
 	AgentTreeExplorationInstance comp =
 			AgentTreeExplorationInstance(tree, 3, 2);
 
-	FileManager::writeInstanceToFile("../data/testFiles/test2.1.txt", comp);
+	FileManager::writeInstanceToFile("../data/testFiles/test2.1.txt", &comp);
 
-	AgentTreeExplorationInstance atei =
-			FileManager::readInstanceFromFile("../data/testFiles/test2.1.txt");
+	AgentTreeExplorationInstance atei = FileManager::readInstanceFromFile("../data/testFiles/test2.1.txt");
 
-	ASSERT_TRUE(comp == atei);
+	ASSERT_EQ(comp, atei);
+
 }

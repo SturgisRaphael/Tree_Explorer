@@ -479,13 +479,13 @@
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/main.cpp">
 			<Option target="exec"/>
 		</Unit>
-		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/BinaryTree.h">
-			<Option target="core"/>
-		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h">
 			<Option target="core"/>
 		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tripple.h">
 			<Option target="core"/>
 		</Unit>
 		<Unit filename="/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.cpp">

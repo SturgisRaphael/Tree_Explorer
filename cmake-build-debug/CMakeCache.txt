@@ -394,12 +394,6 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-pthread;general;gtest;
 
-//Value Computed by CMake
-sources_BINARY_DIR:STATIC=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources
-
-//Value Computed by CMake
-sources_SOURCE_DIR:STATIC=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources
-
 
 ########################
 # INTERNAL cache entries

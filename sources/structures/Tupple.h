@@ -5,12 +5,18 @@
 #ifndef TREE_EXPLORER_TUPPLE_H
 #define TREE_EXPLORER_TUPPLE_H
 
+#include <ostream>
+
+using namespace std;
+
 template <class A, class B>
 class Tupple {
 private:
-	A a;
-	B b;
+	A a = static_cast<A>(0);
+	B b = static_cast<B>(0);
 public:
+	Tupple() {}
+
 	Tupple(A a, B b) : a(a), b(b) {};
 
 	/**
@@ -27,6 +33,20 @@ public:
 	 */
 	B getB() const {
 		return b;
+	}
+
+	bool operator==(const Tupple &rhs) const {
+		return a == rhs.a &&
+			   b == rhs.b;
+	}
+
+	bool operator!=(const Tupple &rhs) const {
+		return !(rhs == *this);
+	}
+
+	friend ostream &operator<<(ostream &os, const Tupple &tupple) {
+		os << "(" << tupple.a << "," << tupple.b << ")";
+		return os;
 	}
 };
 

@@ -67,11 +67,11 @@ AgentTreeExplorationInstance FileManager::readInstanceFromFile(string path) {
 }
 
 void FileManager::writeInstanceToFile(string path,
-                                      AgentTreeExplorationInstance instance) {
+                                      AgentTreeExplorationInstance *instance) {
 	ofstream myfile (path);
 	if (myfile.is_open())
 	{
-		myfile << instance;
+		myfile << *instance;
 		myfile.close();
 	}
 	else cout << "Unable to open file";

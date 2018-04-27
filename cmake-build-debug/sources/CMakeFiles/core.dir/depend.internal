@@ -7,9 +7,9 @@ sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/BinaryTree.h
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
+ /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tripple.h
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
 sources/CMakeFiles/core.dir/algortihms/optimalSolver.cpp.o
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/optimalSolver.cpp
@@ -20,8 +20,8 @@ sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/BinaryTree.h
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
+ /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.cpp
  /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.h

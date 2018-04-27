@@ -8,12 +8,16 @@
 #include "../structures/AgentTreeExplorationSolution.h"
 #include "../glpk/glpk_interface.h"
 #include "../structures/Tupple.h"
-#include "../structures/BinaryTree.h"
+#include "../structures/Tripple.h"
 
 class LinearProgrammingSolver {
 private:
 	friend class Tree<int>;
 	glpk_interface lp;
+
+	void PI_r(Tree<Tupple<int, double>> *binaryTree, int battery);
+	void PI_f(Tree<Tupple<int, double>> *binaryTree, int battery);
+
 public:
 	glpk_interface &getLp();
 
@@ -34,6 +38,10 @@ public:
 	                             double *matrix);
 
 	Tree<Tupple<int, double>> *makeBinaryTree(Tree<int> *tree, double *matrix);
+
+	vector<Edge<int>*> findBestWalk(Tree<int> *referenceTree, Tree<Tupple<int, double>> *binaryTree);
+
+	void findBestWalkRecursion(Tree<Tupple<int, double>> *binaryTree);
 };
 
 

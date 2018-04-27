@@ -52,10 +52,10 @@ TEST(Tree, Tree_Equality_Test) {
 
 TEST(BinaryTree, all) {
 	Tree<int> binaryTree = Tree<int>("root");
-	binaryTree.addChild("1");
-	binaryTree.addChild("2");
-	binaryTree.addChild("3");
-	binaryTree.addChild("4");
+	binaryTree.addChildBin("1", 1, 0, 0);
+	binaryTree.addChildBin("2", 2, 0, 0);
+	binaryTree.addChildBin("3", 3, 0, 0);
+	binaryTree.addChildBin("4", 4, 0, 0);
 
 	binaryTree.binarize(-1);
 

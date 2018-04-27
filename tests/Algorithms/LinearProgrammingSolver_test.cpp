@@ -8,7 +8,6 @@
 #include "../../sources/structures/AgentTreeExplorationInstance.h"
 #include "../../sources/algortihms/LinearProgrammingSolver.h"
 #include "../../sources/structures/Tupple.h"
-#include "../../sources/structures/BinaryTree.h"
 
 TEST(LinearProgrammingSolver, loadMatrix) {
 	Tree<int>* tree = new Tree<int>("root");
@@ -186,6 +185,30 @@ TEST(LinearProgrammingSolver, extractBeta_i) {
 
 }
 
+TEST(LinearProgrammingSolver, extractBeta_i2) {
+	Tree<int>* tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->addChild("3");
+
+	AgentTreeExplorationInstance* atei = new AgentTreeExplorationInstance
+			(tree, 2, 1);
+
+	LinearProgrammingSolver solver = LinearProgrammingSolver();
+	solver.solver(atei);
+
+	double *matrix = solver.extractBeta_i(3);
+
+	cout << matrix[0] << endl;
+	cout << matrix[1] << endl;
+	cout << matrix[2] << endl;
+
+	free(matrix);
+
+	delete atei;
+
+}
+
 TEST(LinearProgrammingSolver, makeBinaryTree) {
 	Tree<int>* tree = new Tree<int>("root");
 	tree->addChild("1");
@@ -199,15 +222,45 @@ TEST(LinearProgrammingSolver, makeBinaryTree) {
 
 	double *matrix = solver.extractBeta_i(2);
 
-	BinaryTree<Tupple> *binaryTree = solver.makeBinaryTree(tree, matrix);
+	Tree<Tupple<int,double>> *binaryTree = solver.makeBinaryTree(tree, matrix);
 
-	BinaryTree<Tupple<int, double>> *comp = new BinaryTree("root", Tupple<int, double>(0, 0));
-	comp->addChild("1");
-	comp->addChild("2");
+	Tree<Tupple<int, double>> *comp = new Tree<Tupple<int, double>>("root");
+	comp->addChildBin("1", 0, Tupple<int, double>(1, 0), Tupple<int, double>(0, 0));
+	comp->addChildBin("2", 0, Tupple<int, double>(1, 1), Tupple<int, double>(0, 0));
 
-	Tree<Tupple<int, double>> *a = comp->convert(), *b = binaryTree->convert();
+	ASSERT_EQ(*comp, *binaryTree);
+	ASSERT_EQ(comp->getEdge("1")->getWeight(), binaryTree->getEdge("1")->getWeight());
+	ASSERT_EQ(comp->getEdge("2")->getWeight(), binaryTree->getEdge("2")->getWeight());
+}
 
-	ASSERT_EQ(a, b);
-	ASSERT_EQ(a->getEdge("1")->getWeight(), b->getEdge("1")->getWeight());
-	ASSERT_EQ(a->getEdge("2")->getWeight(), b->getEdge("2")->getWeight());
+TEST(LinearProgrammingSolver, makeBinaryTree2) {
+	Tree<int>* tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->addChild("3");
+
+	AgentTreeExplorationInstance* atei = new AgentTreeExplorationInstance
+			(tree, 2, 1);
+
+	LinearProgrammingSolver solver = LinearProgrammingSolver();
+	solver.solver(atei);
+
+	double *matrix = solver.extractBeta_i(3);
+
+	Tree<Tupple<int,double>> *binaryTree = solver.makeBinaryTree(tree, matrix);
+
+	Tree<Tupple<int, double>> *comp = new Tree<Tupple<int, double>>("root");
+	comp->addChildBin("1", 0, Tupple<int, double>(1, 0), Tupple<int, double>(0, 0));
+	comp->addChildBin("2", 1, Tupple<int, double>(1, 1), Tupple<int, double>(0, 0));
+	comp->addChildBin("3", 2, Tupple<int, double>(1, 1), Tupple<int, double>(0, 0));
+
+	ASSERT_EQ(*comp, *binaryTree);
+
+	ASSERT_EQ(comp->getEdge("1")->getWeight(), binaryTree->getEdge("1")->getWeight());
+	ASSERT_EQ(comp->getChild(1)->getEdge("2")->getWeight(), binaryTree->getChild(1)->getEdge("2")->getWeight());
+	ASSERT_EQ(comp->getChild(1)->getEdge("3")->getWeight(), binaryTree->getChild(1)->getEdge("3")->getWeight());
+
+	ASSERT_EQ(comp->getEdge("1")->getId(), binaryTree->getEdge("1")->getId());
+	ASSERT_EQ(comp->getChild(1)->getEdge("2")->getId(), binaryTree->getChild(1)->getEdge("2")->getId());
+	ASSERT_EQ(comp->getChild(1)->getEdge("3")->getId(), binaryTree->getChild(1)->getEdge("3")->getId());
 }

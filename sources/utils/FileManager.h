@@ -26,7 +26,7 @@ public:
 	 * @param instance
 	 */
 	static void writeInstanceToFile(string path, AgentTreeExplorationInstance
-	instance);
+	*instance);
 
 	/**
 	 * Writes solution to the problem to file

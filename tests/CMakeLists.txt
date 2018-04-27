@@ -7,7 +7,6 @@ project(Example)
 include(CTest)
 enable_testing()
 
-
 add_subdirectory(lib/googletest-master)
 
 include_directories(lib/googletest-master/googletest/include)

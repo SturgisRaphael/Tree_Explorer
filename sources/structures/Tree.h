@@ -35,6 +35,18 @@ protected:
 public:
 	explicit Tree(const string &label) : label(label) {Edge<T>::reset();}
 
+	const double *getPI_r() const;
+
+	const double *getPI_f() const;
+
+	const Tupple<int, int> *getPI_r_origin() const;
+
+	const Tupple<int, int> *getPI_f_origin() const;
+
+	const Tupple<int, int> *getPI_r_batterySplit() const;
+
+	const Tupple<int, int> *getPI_f_batterySplit() const;
+
 	Tree(const string &label, Edge<T> *edgeToParent) : label(label), edgeToParent(edgeToParent) {}
 
 	const string &getLabel() const {
@@ -112,6 +124,14 @@ public:
 	{
 		for(Edge<T>* edge : edges)
 			if(edge->getChild()->label == label)
+				return edge;
+		return nullptr;
+	}
+
+	Edge<T>* getEdge(int id)
+	{
+		for(Edge<T>* edge : edges)
+			if(edge->getId() == id)
 				return edge;
 		return nullptr;
 	}

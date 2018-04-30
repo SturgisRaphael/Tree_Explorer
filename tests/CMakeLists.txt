@@ -4,6 +4,8 @@ project(Test)
 
 project(Example)
 
+set(CMAKE_CXX_STANDARD 11)
+
 include(CTest)
 enable_testing()
 

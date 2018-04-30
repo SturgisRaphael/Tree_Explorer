@@ -12,8 +12,8 @@ using namespace std;
 template <class A, class B>
 class Tupple {
 private:
-	A a = static_cast<A>(0);
-	B b = static_cast<B>(0);
+	A a = static_cast<A>(-1);
+	B b = static_cast<B>(-1);
 public:
 	Tupple() {}
 

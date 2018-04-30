@@ -46,21 +46,111 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae901eb8-ea46-4762-95ff-21236bcc44f0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/algortihms/optimalSolver.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/utils/FileManager.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/libcore.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/glpk/glpk_interface_test.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/gtest.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/libgtestd.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/runUnitTests" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tree_Explorer.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tree_Explorer.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/exec.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/exec.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/exec.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/exec.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/Continuous.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/Continuous.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousBuild.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousBuild.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousConfigure.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousConfigure.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousCoverage.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousCoverage.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousMemCheck.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousMemCheck.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousStart.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousStart.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousSubmit.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousSubmit.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousUpdate.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ContinuousUpdate.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/Experimental.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/Experimental.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalBuild.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalBuild.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalConfigure.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalConfigure.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalCoverage.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalCoverage.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalMemCheck.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalMemCheck.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalStart.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalStart.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalSubmit.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalSubmit.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalUpdate.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/ExperimentalUpdate.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/Nightly.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/Nightly.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyBuild.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyBuild.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyConfigure.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyConfigure.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyCoverage.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyCoverage.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyMemCheck.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyMemCheck.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyMemoryCheck.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyMemoryCheck.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyStart.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyStart.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlySubmit.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlySubmit.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyUpdate.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/NightlyUpdate.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/DartConfiguration.tcl" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/DartConfiguration.tcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/Example.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/Example.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gmock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gmock.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/gtest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googletest-distribution.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/structures/Edge.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/structures/Edge.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/structures/Tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/structures/Tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/structures/Tupple.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/structures/Tupple.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Algorithms/LinearProgrammingSolver_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Algorithms/LinearProgrammingSolver_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,37 +163,104 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LinearProgrammingSolver.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LinearProgrammingSolver.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="236" column="63" selection-start-line="236" selection-start-column="63" selection-end-line="236" selection-end-column="63" />
+            <state relative-caret-position="585">
+              <caret line="487" selection-start-line="487" selection-end-line="487" />
               <folding>
-                <element signature="e#41#77#0" expanded="true" />
+                <element signature="e#41#60#0" expanded="true" />
+                <element signature="e#1036#1465#0" />
+                <element signature="e#566#1256#0" />
+                <element signature="e#1258#1697#0" />
+                <element signature="e#2731#3493#0" />
+                <element signature="e#3495#3558#0" />
+                <element signature="e#3560#3781#0" />
+                <element signature="e#3783#4027#0" />
+                <element signature="e#4029#4591#0" />
+                <element signature="e#5510#5989#0" />
+                <element signature="e#4752#6516#0" />
+                <element signature="e#6998#9496#0" />
+                <element signature="e#9241#9452#0" />
+                <element signature="e#10472#10590#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinearProgrammingSolver_test.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Algorithms/LinearProgrammingSolver_test.cpp">
+      <file leaf-file-name="glpk_interface.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/glpk/glpk_interface.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="15">
+              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/structures/Tree.h">
+      <file leaf-file-name="glpk_interface.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/glpk/glpk_interface.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+            <state relative-caret-position="485">
+              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="glpk_interface_test.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/glpk/glpk_interface_test.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinearProgrammingSolver.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
               <folding>
-                <element signature="e#102#119#0" expanded="true" />
+                <element signature="e#138#193#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sources/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <folding>
+                <element signature="e#42#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgentTreeExplorationInstance.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/structures/AgentTreeExplorationInstance.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1245">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mps.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/sources/mps.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="print.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/sources/print.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="sol.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/sources/sol.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -157,27 +314,27 @@
         <option value="$PROJECT_DIR$/cmake-build-debug/tests/test.txt" />
         <option value="$PROJECT_DIR$/tests/glpk/glpk_interface_test.cpp" />
         <option value="$PROJECT_DIR$/sources/structures/AgentTreeExplorationInstance.h" />
-        <option value="$PROJECT_DIR$/sources/glpk/glpk_interface.h" />
         <option value="$PROJECT_DIR$/sources/glpk/glpk_interface.cpp" />
-        <option value="$PROJECT_DIR$/sources/main.cpp" />
         <option value="$PROJECT_DIR$/sources/structures/BinaryTree.h" />
         <option value="$PROJECT_DIR$/tests/structures/BinaryTree_test.cpp" />
         <option value="$PROJECT_DIR$/sources/structures/Edge.h" />
         <option value="$PROJECT_DIR$/sources/legacy/Tree.h" />
         <option value="$PROJECT_DIR$/cmake-build-debug/data/testFiles/test2.1.txt" />
         <option value="$PROJECT_DIR$/tests/structures/Tree_test.cpp" />
-        <option value="$PROJECT_DIR$/tests/Algorithms/LinearProgrammingSolver_test.cpp" />
         <option value="$PROJECT_DIR$/sources/structures/test.h" />
         <option value="$PROJECT_DIR$/sources/structures/Tripple.h" />
-        <option value="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h" />
-        <option value="$PROJECT_DIR$/sources/structures/Tupple.h" />
-        <option value="$PROJECT_DIR$/tests/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/sources/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/sources/utils/FileManager.h" />
         <option value="$PROJECT_DIR$/sources/utils/FileManager.cpp" />
         <option value="$PROJECT_DIR$/tests/utils/FileManager_test.cpp" />
+        <option value="$PROJECT_DIR$/tests/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/sources/structures/Tupple.h" />
         <option value="$PROJECT_DIR$/sources/structures/Tree.h" />
+        <option value="$PROJECT_DIR$/tests/Algorithms/LinearProgrammingSolver_test.cpp" />
+        <option value="$PROJECT_DIR$/sources/glpk/glpk_interface.h" />
+        <option value="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h" />
         <option value="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp" />
+        <option value="$PROJECT_DIR$/sources/main.cpp" />
       </list>
     </option>
   </component>
@@ -196,10 +353,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="27" />
-    <option name="width" value="1366" />
-    <option name="height" value="741" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-1204" />
+    <option name="width" value="1920" />
+    <option name="height" value="1204" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -217,6 +374,17 @@
             <path>
               <item name="Tree_Explorer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tree_Explorer" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tree_Explorer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tree_Explorer" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tree_Explorer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tree_Explorer" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -224,6 +392,12 @@
               <item name="Tree_Explorer" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
               <item name="algortihms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tree_Explorer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tree_Explorer" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="legacy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tree_Explorer" type="b2602c69:ProjectViewProjectNode" />
@@ -241,6 +415,18 @@
               <item name="Tree_Explorer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tree_Explorer" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tree_Explorer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tree_Explorer" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tree_Explorer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tree_Explorer" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="glpk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tree_Explorer" type="b2602c69:ProjectViewProjectNode" />
@@ -290,12 +476,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Google Test.All in gtest.cpp">
+  <component name="RunManager" selected="Application.exec">
+    <configuration name="All in LinearProgrammingSolver_test.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" TEST_PATTERN="LinearProgrammingSolver.*:LinearProgrammingSolver/*.*:*/LinearProgrammingSolver.*/*:*/LinearProgrammingSolver/*.*" TEST_MODE="PATTERN" />
     <configuration name="All in gtest.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" TEST_PATTERN="" TEST_MODE="PATTERN" />
-    <configuration name="LinearProgrammingSolver.buildGlpkMatrices" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="LinearProgrammingSolver" TEST_METHOD="buildGlpkMatrices" TEST_MODE="SUITE_TEST" />
-    <configuration name="LinearProgrammingSolver.loadMatrix2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="LinearProgrammingSolver" TEST_METHOD="loadMatrix2" TEST_MODE="SUITE_TEST" />
-    <configuration name="LinearProgrammingSolver.makeBinaryTree" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="LinearProgrammingSolver" TEST_METHOD="makeBinaryTree" TEST_MODE="SUITE_TEST" />
-    <configuration name="LinearProgrammingSolver.makeBinaryTree2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="LinearProgrammingSolver" TEST_METHOD="makeBinaryTree2" TEST_MODE="SUITE_TEST" />
+    <configuration name="LinearProgrammingSolver.PI_f" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="LinearProgrammingSolver" TEST_METHOD="PI_f" TEST_MODE="SUITE_TEST" />
+    <configuration name="LinearProgrammingSolver.PI_r" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="LinearProgrammingSolver" TEST_METHOD="PI_r" TEST_MODE="SUITE_TEST" />
+    <configuration name="LinearProgrammingSolver.findBestWalkId" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="LinearProgrammingSolver" TEST_METHOD="findBestWalkId" TEST_MODE="SUITE_TEST" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="exec" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="Continuous" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="Continuous" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" />
     <configuration name="ContinuousBuild" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Tree_Explorer" TARGET_NAME="ContinuousBuild" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Tree_Explorer" RUN_TARGET_NAME="runUnitTests" />
@@ -369,19 +555,19 @@
       <item itemvalue="Application.gmock_main" />
       <item itemvalue="Application.gtest" />
       <item itemvalue="Application.gtest_main" />
-      <item itemvalue="Google Test.LinearProgrammingSolver.loadMatrix2" />
-      <item itemvalue="Google Test.LinearProgrammingSolver.buildGlpkMatrices" />
-      <item itemvalue="Google Test.LinearProgrammingSolver.makeBinaryTree" />
-      <item itemvalue="Google Test.LinearProgrammingSolver.makeBinaryTree2" />
       <item itemvalue="Google Test.All in gtest.cpp" />
+      <item itemvalue="Google Test.LinearProgrammingSolver.PI_r" />
+      <item itemvalue="Google Test.LinearProgrammingSolver.PI_f" />
+      <item itemvalue="Google Test.LinearProgrammingSolver.findBestWalkId" />
+      <item itemvalue="Google Test.All in LinearProgrammingSolver_test.cpp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.All in LinearProgrammingSolver_test.cpp" />
+        <item itemvalue="Google Test.LinearProgrammingSolver.PI_r" />
+        <item itemvalue="Google Test.LinearProgrammingSolver.findBestWalkId" />
         <item itemvalue="Google Test.All in gtest.cpp" />
-        <item itemvalue="Google Test.LinearProgrammingSolver.makeBinaryTree2" />
-        <item itemvalue="Google Test.LinearProgrammingSolver.makeBinaryTree" />
-        <item itemvalue="Google Test.LinearProgrammingSolver.buildGlpkMatrices" />
-        <item itemvalue="Google Test.LinearProgrammingSolver.loadMatrix2" />
+        <item itemvalue="Google Test.LinearProgrammingSolver.PI_f" />
       </list>
     </recent_temporary>
   </component>
@@ -412,39 +598,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 04m 58s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_LinearProgrammingSolver_test_cpp - 2018.04.30 at 14h 20m 47s.xml">
+      <configuration name="All in LinearProgrammingSolver_test.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 05m 59s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="LinearProgrammingSolver_findBestWalkId - 2018.04.30 at 14h 20m 47s.xml">
+      <configuration name="LinearProgrammingSolver.findBestWalkId" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 06m 41s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_LinearProgrammingSolver_test_cpp - 2018.04.30 at 14h 20m 54s.xml">
+      <configuration name="All in LinearProgrammingSolver_test.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 10m 19s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_LinearProgrammingSolver_test_cpp - 2018.04.30 at 14h 22m 15s.xml">
+      <configuration name="All in LinearProgrammingSolver_test.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 13m 42s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_LinearProgrammingSolver_test_cpp - 2018.04.30 at 14h 22m 45s.xml">
+      <configuration name="All in LinearProgrammingSolver_test.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 16m 11s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_LinearProgrammingSolver_test_cpp - 2018.04.30 at 14h 33m 24s.xml">
+      <configuration name="All in LinearProgrammingSolver_test.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 16m 23s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_LinearProgrammingSolver_test_cpp - 2018.04.30 at 14h 51m 34s.xml">
+      <configuration name="All in LinearProgrammingSolver_test.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 16m 40s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_LinearProgrammingSolver_test_cpp - 2018.04.30 at 14h 51m 50s.xml">
+      <configuration name="All in LinearProgrammingSolver_test.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 17m 50s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_LinearProgrammingSolver_test_cpp - 2018.04.30 at 14h 53m 09s.xml">
+      <configuration name="All in LinearProgrammingSolver_test.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_gtest_cpp - 2018.04.27 at 11h 18m 07s.xml">
-      <configuration name="All in gtest.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_LinearProgrammingSolver_test_cpp - 2018.04.30 at 14h 57m 32s.xml">
+      <configuration name="All in LinearProgrammingSolver_test.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128519000" />
+    <option name="totallyTimeSpent" value="144085000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -456,27 +642,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="0" />
+    <frame x="0" y="-4" width="1920" height="1204" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49874055" visible="true" weight="0.18628912" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49874055" visible="true" weight="0.1859375" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Messages" order="1" visible="true" weight="0.4614094" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.46076643" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.18071161" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.3286517" />
       <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.33221477" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.33211678" />
       <window_info id="Structure" order="2" sideWeight="0.50125945" side_tool="true" weight="0.22354695" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32885906" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.45302013" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.45255473" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.33221477" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32885906" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49874055" visible="true" weight="0.18628912" />
+      <window_info id="Structure" order="2" sideWeight="0.50125945" side_tool="true" weight="0.22354695" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32885906" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="CMake" order="5" weight="0.18071161" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32885906" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.45302013" />
       <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3286517" />
+      <window_info active="true" anchor="bottom" id="Messages" order="1" visible="true" weight="0.4614094" />
+      <window_info id="Favorites" order="0" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,22 +696,22 @@
           <line>100</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp</url>
+          <line>31</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="74" />
+      <option name="time" value="105" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CMakeGoogleTestRunConfigurationType">
-        <watch expression="matrix[0][0]" />
-        <watch expression="matrix[0][1]" language="ObjectiveC" />
-        <watch expression="matrix[1][0]" language="ObjectiveC" />
-        <watch expression="matrix[1][1]" language="ObjectiveC" />
-        <watch expression="matrix[2][0]" language="ObjectiveC" />
-        <watch expression="matrix[2][1]" language="ObjectiveC" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>*ids</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>ia[1]</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -522,22 +720,7 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>matrix[2][1]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>matrix[0][1]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>matrix[0][0]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>matrix[0]</expression-string>
+        <expression-string>matrix[3]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -552,48 +735,38 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>edges.size()</expression-string>
+        <expression-string>matrix[0]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>getChild(0)</expression-string>
+        <expression-string />
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rhs.edges[0]-&gt;child</expression-string>
+        <expression-string>binaryTree-&gt;getPI_r_origin()[battery].getA()</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>glp_set_obj_dir(this, GLP_MAX)</expression-string>
+        <expression-string>binaryTree-&gt;edges[0]-&gt;getChild()-&gt;PI_f[battery-w1]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matrix[2][1]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matrix[0][1]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/structures/Edge.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#155#164#0" expanded="true" />
-            <element signature="e#187#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/old/Tree.h" />
-    <entry file="file:///usr/include/c++/6/bits/stl_algo.h" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/tests/input_glpk.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/lib/googletest-master/googletest/src/gtest-internal-inl.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -603,13 +776,6 @@
     </entry>
     <entry file="file:///usr/include/c++/6/bits/move.h" />
     <entry file="file:///usr/include/c++/6/new" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/tests/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/6/bits/stl_construct.h" />
     <entry file="file://$PROJECT_DIR$/sources/algortihms/optimalSolver.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -630,54 +796,6 @@
         <state relative-caret-position="108">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/lib/googletest-master/googletest/include/gtest/gtest.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="1429" selection-start-line="1429" selection-end-line="1429" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/glpk/glpk_interface.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/glpk/glpk_interface.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/glpk/glpk_interface_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <element signature="e#42#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sources/sol.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sources/mps.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/sources/Makefile">
@@ -719,64 +837,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/5/bits/stl_vector.h" />
     <entry file="file://$PROJECT_DIR$/sources/structures/Tripple.h" />
-    <entry file="file://$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#138#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/gtest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/structures/Tupple.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/structures/Edge.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/structures/AgentTreeExplorationInstance.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
@@ -807,85 +872,190 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/6/ext/alloc_traits.h">
+    <entry file="file:///usr/include/c++/6/ext/alloc_traits.h" />
+    <entry file="file:///usr/include/c++/6/bits/alloc_traits.h" />
+    <entry file="file:///usr/include/c++/6/bits/allocator.h" />
+    <entry file="file:///usr/include/c++/6/ext/new_allocator.h" />
+    <entry file="file:///usr/include/c++/6/bits/stl_iterator.h" />
+    <entry file="file:///usr/include/c++/6/bits/stl_uninitialized.h" />
+    <entry file="file:///usr/include/c++/6/bits/stl_vector.h" />
+    <entry file="file://$PROJECT_DIR$/sources/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/6/bits/alloc_traits.h">
+    <entry file="file://$PROJECT_DIR$/tests/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="435" selection-start-line="435" selection-end-line="435" />
+        <state relative-caret-position="90">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/6/bits/allocator.h">
+    <entry file="file://$PROJECT_DIR$/tests/gtest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/6/ext/new_allocator.h">
+    <entry file="file://$PROJECT_DIR$/sources/structures/Edge.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="182">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/6/bits/stl_iterator.h">
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="776" selection-start-line="776" selection-end-line="776" />
+        <state relative-caret-position="182">
+          <caret line="931" selection-start-line="931" selection-end-line="931" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/6/bits/stl_uninitialized.h">
+    <entry file="file:///usr/include/c++/5/bits/vector.tcc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="182">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/6/bits/stl_vector.h">
+    <entry file="file:///usr/include/c++/5/bits/alloc_traits.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        <state relative-caret-position="182">
+          <caret line="529" selection-start-line="529" selection-end-line="529" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/lib/googletest-master/googletest/src/gtest.cc">
+    <entry file="file:///usr/include/c++/5/ext/new_allocator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="2500" selection-start-line="2500" selection-end-line="2500" />
+        <state relative-caret-position="191">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Algorithms/LinearProgrammingSolver_test.cpp">
+    <entry file="file://$PROJECT_DIR$/sources/structures/Tupple.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="225">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/lib/googletest-master/googletest/include/gtest/gtest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="1429" selection-start-line="1429" selection-end-line="1429" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/structures/Tree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="335">
+          <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
           <folding>
             <element signature="e#102#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/lib/googletest-master/googletest/src/gtest.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="2500" selection-start-line="2500" selection-end-line="2500" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/tests/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Algorithms/LinearProgrammingSolver_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="409" column="37" selection-start-line="409" selection-start-column="37" selection-end-line="409" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sources/sol.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sources/mps.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sources/print.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/glpk/glpk_interface.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/glpk/glpk_interface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/glpk/glpk_interface_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding>
+            <element signature="e#138#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="236" column="63" selection-start-line="236" selection-start-column="63" selection-end-line="236" selection-end-column="63" />
+        <state relative-caret-position="585">
+          <caret line="487" selection-start-line="487" selection-end-line="487" />
           <folding>
-            <element signature="e#41#77#0" expanded="true" />
+            <element signature="e#41#60#0" expanded="true" />
+            <element signature="e#1036#1465#0" />
+            <element signature="e#566#1256#0" />
+            <element signature="e#1258#1697#0" />
+            <element signature="e#2731#3493#0" />
+            <element signature="e#3495#3558#0" />
+            <element signature="e#3560#3781#0" />
+            <element signature="e#3783#4027#0" />
+            <element signature="e#4029#4591#0" />
+            <element signature="e#5510#5989#0" />
+            <element signature="e#4752#6516#0" />
+            <element signature="e#6998#9496#0" />
+            <element signature="e#9241#9452#0" />
+            <element signature="e#10472#10590#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/structures/AgentTreeExplorationInstance.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
           </folding>
         </state>
       </provider>

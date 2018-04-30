@@ -8,5 +8,7 @@ sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/structures/AgentTreeExplorati
 sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
 sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/structures/Edge.h
 sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/structures/Tree.h
+sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/structures/Tripple.h
+sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/structures/Tupple.h
 sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/utils/FileManager.h
 

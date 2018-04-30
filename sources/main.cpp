@@ -18,10 +18,13 @@ int main(int argc, char* argv[])
 	tree->addChild("4");
 
 	AgentTreeExplorationInstance atei = AgentTreeExplorationInstance
-			(tree, 2, 1);
+			(tree, 4, 4);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
 	solver.solver(&atei);
+
+	solver.printSolution();
+
 	solver.getLp().writeMPS("mps.txt");
 	solver.getLp().writeSol("sol.txt");
 	solver.getLp().printSol("print.txt");

@@ -14,9 +14,7 @@ class LinearProgrammingSolver {
 private:
 	friend class Tree<int>;
 	glpk_interface lp;
-
-	void PI_r(Tree<Tupple<int, double>> *binaryTree, int battery);
-	void PI_f(Tree<Tupple<int, double>> *binaryTree, int battery);
+	int p, m;
 
 public:
 	glpk_interface &getLp();
@@ -39,10 +37,49 @@ public:
 
 	Tree<Tupple<int, double>> *makeBinaryTree(Tree<int> *tree, double *matrix);
 
-	vector<Edge<int>*> findBestWalk(Tree<int> *referenceTree, Tree<Tupple<int, double>> *binaryTree);
+	vector<Edge<int> *> findBestWalk(Tree<int> *referenceTree, Tree<Tupple<int, double>> *binaryTree, int battery);
+	void findBestWalkId(Tree<Tupple<int, double>> *binaryTree, vector<int> *ids, int battery,
+						bool returnToNode);
 
-	void findBestWalkRecursion(Tree<Tupple<int, double>> *binaryTree);
+	void tmpFunc(Tree<Tupple<int, double>> *binaryTree, int battery);//TODO: remove
+
+	void PI_r(Tree<Tupple<int, double>> *binaryTree, int battery);
+	void PI_f(Tree<Tupple<int, double>> *binaryTree, int battery);
+
+	AgentTreeExplorationSolution solver2(AgentTreeExplorationInstance *atei);
+
+	void printSolution();
 };
+
+template<class T>
+const double *Tree<T>::getPI_r() const {
+	return PI_r;
+}
+
+template<class T>
+const double *Tree<T>::getPI_f() const {
+	return PI_f;
+}
+
+template<class T>
+const Tupple<int, int> *Tree<T>::getPI_r_origin() const {
+	return PI_r_origin;
+}
+
+template<class T>
+const Tupple<int, int> *Tree<T>::getPI_f_origin() const {
+	return PI_f_origin;
+}
+
+template<class T>
+const Tupple<int, int> *Tree<T>::getPI_r_batterySplit() const {
+	return PI_r_batterySplit;
+}
+
+template<class T>
+const Tupple<int, int> *Tree<T>::getPI_f_batterySplit() const {
+	return PI_f_batterySplit;
+}
 
 
 #endif //TREE_EXPLORER_LINEARPROGRAMMINGSOLVER_H

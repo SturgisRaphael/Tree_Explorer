@@ -1,8 +1,8 @@
 * Problem:    atei
 * Class:      LP
 * Rows:       13
-* Columns:    6
-* Non-zeros:  12
+* Columns:    7
+* Non-zeros:  14
 * Format:     Free MPS
 *
 NAME atei
@@ -22,6 +22,7 @@ ROWS
  L gamma5
  L gamma6
 COLUMNS
+ X1 beta1 -1 alpha 1
  y1 R0000000 1 gamma1 1
  y1 beta1 1
  y2 R0000000 1 gamma2 1
@@ -35,11 +36,12 @@ COLUMNS
  y6 R0000000 1 gamma6 1
  y6 beta6 1
 RHS
- RHS1 alpha 2 gamma1 1
+ RHS1 alpha 4 gamma1 1
  RHS1 gamma2 1 gamma3 1
  RHS1 gamma4 1 gamma5 1
  RHS1 gamma6 1
 BOUNDS
+ UP BND1 X1 1
  UP BND1 y1 1
  UP BND1 y2 1
  UP BND1 y3 1

@@ -2,7 +2,7 @@
 * Class:      LP
 * Rows:       13
 * Columns:    7
-* Non-zeros:  14
+* Non-zeros:  15
 * Format:     Free MPS
 *
 NAME atei
@@ -22,7 +22,8 @@ ROWS
  L gamma5
  L gamma6
 COLUMNS
- X1 beta1 -1 alpha 1
+ X1 beta2 -1 beta1 -1
+ X1 alpha 1
  y1 R0000000 1 gamma1 1
  y1 beta1 1
  y2 R0000000 1 gamma2 1

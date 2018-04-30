@@ -100,3 +100,18 @@ void glpk_interface::printSol(const char *fname) {
 double glpk_interface::getRowDual(int index) {
 	return glp_get_row_dual(root, index);
 }
+
+void glpk_interface::deleteProb() {
+	glp_delete_prob(root);
+}
+
+void glpk_interface::freeEnv() {
+	glp_free_env();
+}
+
+void glpk_interface::housekeeping() {
+	deleteProb();
+	freeEnv();
+}
+
+

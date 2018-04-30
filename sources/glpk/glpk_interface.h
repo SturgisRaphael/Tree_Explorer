@@ -52,6 +52,11 @@ public:
 
 	double getRowDual(int index);
 
+	void deleteProb();
+	void freeEnv();
+
+	void housekeeping();
+
 	virtual ~glpk_interface();
 };
 

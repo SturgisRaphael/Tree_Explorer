@@ -16,6 +16,8 @@ LinearProgrammingSolver::solver(AgentTreeExplorationInstance *atei) {
 
 	bool flag = true;
 	while(flag){
+
+		lp.housekeeping();
 		int p = static_cast<int>(walks.size()), m = atei->getTree()
 				->numberOfEdges();
 
@@ -25,11 +27,15 @@ LinearProgrammingSolver::solver(AgentTreeExplorationInstance *atei) {
 
 		lp.simplex(nullptr);
 
+		printSolution();
+
+		cout << "-----------------------------------" << endl;
+
 		double* matrix = extractBeta_i(m);
 
 		Tree<Tupple<int, double>> *binaryTree = makeBinaryTree(atei->getTree(), matrix);
 
-		newWalk = findBestWalk(atei->getTree(), binaryTree, atei->getStartingBattery());
+		newWalk = findBestWalk(atei->getTree(), binaryTree, atei->getStartingBattery() - 1);
 
 		if(walks.size() > 0)
 			flag = false;
@@ -269,8 +275,6 @@ LinearProgrammingSolver::findBestWalk(Tree<int> *referenceTree, Tree<Tupple<int,
 	return result;
 }
 
-
-
 void LinearProgrammingSolver::PI_r(Tree<Tupple<int, double>> *binaryTree, int battery) {
 
 	if(binaryTree->edges.empty())
@@ -425,16 +429,19 @@ void LinearProgrammingSolver::tmpFunc(Tree<Tupple<int, double>> *binaryTree, int
 
 void LinearProgrammingSolver::findBestWalkId(Tree<Tupple<int, double>> *binaryTree, vector<int> *ids, int battery,
 											 bool returnToNode) {
-	if(binaryTree->getPI_f_origin()[battery].getA() != -1)
-	{
-		if(returnToNode)
-		{
-			if (binaryTree->getPI_r_origin()[battery].getB() == -1)//no return to this node
-			{
-				ids->push_back(binaryTree->getPI_r_origin()[battery].getA());
 
-				findBestWalkId(binaryTree->getEdge(binaryTree->getPI_r_origin()[battery].getA())->getChild(), ids,
-							   binaryTree->getPI_r_batterySplit()[battery].getA(), returnToNode);
+	if(returnToNode)
+	{
+		if(binaryTree->getEdge(binaryTree->getPI_r_origin()[battery].getA()) != nullptr)//can be explorer
+		{
+			if (binaryTree->getEdge(binaryTree->getPI_r_origin()[battery].getB()) == nullptr)//no return to this node
+			{
+				int id = binaryTree->getPI_r_origin()[battery].getA();
+
+				ids->push_back(id);
+
+				findBestWalkId(binaryTree->getEdge(id)->getChild(), ids, binaryTree->getPI_r_batterySplit()[battery].getA(),
+							   true);
 			} else {
 				Edge<Tupple<int, double>> *edge1 = binaryTree->getEdge(binaryTree->getPI_r_origin()[battery].getA());
 				Edge<Tupple<int, double>> *edge2 = binaryTree->getEdge(binaryTree->getPI_r_origin()[battery].getB());
@@ -448,20 +455,24 @@ void LinearProgrammingSolver::findBestWalkId(Tree<Tupple<int, double>> *binaryTr
 				findBestWalkId(edge2->getChild(), ids, binaryTree->getPI_r_batterySplit()[battery].getB(), true);
 			}
 		}
-		else {
-			if (binaryTree->getPI_f_origin()[battery].getB() == -1)//no return to this node
+	}
+	else
+	{
+		if(binaryTree->getEdge(binaryTree->getPI_f_origin()[battery].getA()) != nullptr)//can be explorer
+		{
+			if (binaryTree->getEdge(binaryTree->getPI_f_origin()[battery].getB()) == nullptr)//no return to this node
 			{
-				ids->push_back(binaryTree->getPI_f_origin()[battery].getA());
+				int id = binaryTree->getPI_f_origin()[battery].getA();
 
-				findBestWalkId(binaryTree->getEdge(binaryTree->getPI_f_origin()[battery].getA())->getChild(), ids,
-							   binaryTree->getPI_f_batterySplit()[battery].getA(), returnToNode);
+				ids->push_back(id);
+
+				findBestWalkId(binaryTree->getEdge(id)->getChild(), ids, binaryTree->getPI_f_batterySplit()[battery].getA(),
+							   false);
 			} else {
 				Edge<Tupple<int, double>> *edge1 = binaryTree->getEdge(binaryTree->getPI_f_origin()[battery].getA());
 				Edge<Tupple<int, double>> *edge2 = binaryTree->getEdge(binaryTree->getPI_f_origin()[battery].getB());
 
-				int a = binaryTree->getPI_f_origin()[battery].getA();
-
-				ids->push_back(a);
+				ids->push_back(binaryTree->getPI_f_origin()[battery].getA());
 
 				findBestWalkId(edge1->getChild(), ids, binaryTree->getPI_f_batterySplit()[battery].getA(), true);
 
@@ -471,6 +482,8 @@ void LinearProgrammingSolver::findBestWalkId(Tree<Tupple<int, double>> *binaryTr
 			}
 		}
 	}
+
+
 	if(binaryTree->getEdgeToParent() != nullptr && returnToNode)
 		ids->push_back(binaryTree->getEdgeToParent()->getId());
 }
@@ -483,6 +496,8 @@ void LinearProgrammingSolver::printSolution() {
 
 	for(int i = p + 1; i <= m + p; i++)
 		cout << ";y" + to_string(i - p) + "=" << lp.getColPrim(i);
+
+	cout << endl;
 }
 
 

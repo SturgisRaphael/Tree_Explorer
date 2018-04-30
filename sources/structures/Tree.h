@@ -23,7 +23,13 @@ protected:
 	vector<Edge<T>*> edges;			    ///list of child nodes
 	double PI_r[MAX_BATTERY];
 	double PI_f[MAX_BATTERY];
-	Tupple<int, int> origin[MAX_BATTERY];
+
+	Tupple<int, int> PI_r_origin[MAX_BATTERY];
+	Tupple<int, int> PI_f_origin[MAX_BATTERY];
+
+	Tupple<int, int> PI_r_batterySplit[MAX_BATTERY];
+	Tupple<int, int> PI_f_batterySplit[MAX_BATTERY];
+
 	friend class LinearProgrammingSolver;
 
 public:

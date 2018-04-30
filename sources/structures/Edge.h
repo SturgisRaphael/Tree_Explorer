@@ -51,7 +51,7 @@ public:
 		return child;
 	}
 
-	long getId() const {
+	int getId() const {
 		return id;
 	}
 

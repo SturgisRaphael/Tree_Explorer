@@ -46,120 +46,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae901eb8-ea46-4762-95ff-21236bcc44f0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/sources/legacy/Tree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/structures/Tripple.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Tree_Explorer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tree_Explorer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/sources/utils/Tree.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tree_Explorer.dir/tests/Tree_test.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tree_Explorer.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tree_Explorer.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/utils/FileManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/utils/FileManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/exec.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/exec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/libcore.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sources/libcore.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/libgmockd.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/runUnitTests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/runUnitTests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sources/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/algortihms/optimalSolver.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/CMakeFiles/core.dir/utils/FileManager.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/sources/libcore.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/glpk/glpk_interface_test.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/gtest.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/googletest-master/googlemock/gtest/libgtestd.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/runUnitTests" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/structures/BinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/legacy/BinaryTree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/structures/Edge.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/structures/Edge.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/structures/Tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/structures/Tree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/structures/Tupple.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/structures/Tupple.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/utils/FileManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/sources/utils/FileManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/utils/FileManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/utils/FileManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Algorithms/LinearProgrammingSolver_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Algorithms/LinearProgrammingSolver_test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/ci/build-linux-autotools.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/ci/build-linux-autotools.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/ci/build-linux-bazel.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/ci/build-linux-bazel.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/ci/env-linux.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/ci/env-linux.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/ci/env-osx.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/ci/env-osx.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/ci/get-nprocessors.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/ci/get-nprocessors.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/ci/install-linux.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/ci/install-linux.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/ci/install-osx.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/ci/install-osx.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/ci/log-config.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/ci/log-config.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/ci/travis.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/ci/travis.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/fuse_gmock_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/fuse_gmock_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/ast.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/ast.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/gmock_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/gmock_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/gmock_class_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/gmock_class_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/keywords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/tokenize.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/tokenize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/cpp/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/gmock_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/generator/gmock_gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/gmock-config.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/gmock-config.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/gmock_doctor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/gmock_doctor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/upload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/upload_gmock.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/scripts/upload_gmock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/test/gmock_leak_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/test/gmock_leak_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/test/gmock_output_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/test/gmock_output_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/test/gmock_test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googlemock/test/gmock_test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/fuse_gtest_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/fuse_gtest_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/gen_gtest_pred_impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/gen_gtest_pred_impl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/gtest-config.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/gtest-config.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/pump.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/pump.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/release_docs.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/release_docs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/upload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/upload_gtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/scripts/upload_gtest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_break_on_failure_unittest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_break_on_failure_unittest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_catch_exceptions_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_catch_exceptions_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_color_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_color_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_env_var_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_env_var_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_filter_unittest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_filter_unittest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_help_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_help_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_list_tests_unittest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_list_tests_unittest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_output_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_output_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_shuffle_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_shuffle_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_throw_on_failure_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_throw_on_failure_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_uninitialized_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_uninitialized_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_xml_outfiles_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_xml_outfiles_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_xml_output_unittest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_xml_output_unittest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_xml_test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/test/gtest_xml_test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/xcode/Scripts/versiongenerate.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/lib/googletest-master/googletest/xcode/Scripts/versiongenerate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/structures/Tree_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/structures/Tree_test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/utils/FileManager_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/utils/FileManager_test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install-3.5" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3.5" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python3.5" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python3.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-9.0.1-py3.5.egg/pip/_vendor/distlib/t32.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-9.0.1-py3.5.egg/pip/_vendor/distlib/t32.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-9.0.1-py3.5.egg/pip/_vendor/distlib/t64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-9.0.1-py3.5.egg/pip/_vendor/distlib/t64.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-9.0.1-py3.5.egg/pip/_vendor/distlib/w32.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-9.0.1-py3.5.egg/pip/_vendor/distlib/w32.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-9.0.1-py3.5.egg/pip/_vendor/distlib/w64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/pip-9.0.1-py3.5.egg/pip/_vendor/distlib/w64.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -175,8 +76,8 @@
       <file leaf-file-name="LinearProgrammingSolver.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="229">
+              <caret line="236" column="63" selection-start-line="236" selection-start-column="63" selection-end-line="236" selection-end-column="63" />
               <folding>
                 <element signature="e#41#77#0" expanded="true" />
               </folding>
@@ -196,8 +97,8 @@
       <file leaf-file-name="Tree.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/structures/Tree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+            <state relative-caret-position="193">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding>
                 <element signature="e#102#119#0" expanded="true" />
               </folding>
@@ -270,13 +171,13 @@
         <option value="$PROJECT_DIR$/sources/structures/Tripple.h" />
         <option value="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.h" />
         <option value="$PROJECT_DIR$/sources/structures/Tupple.h" />
-        <option value="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp" />
         <option value="$PROJECT_DIR$/tests/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/sources/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/sources/utils/FileManager.h" />
         <option value="$PROJECT_DIR$/sources/utils/FileManager.cpp" />
         <option value="$PROJECT_DIR$/tests/utils/FileManager_test.cpp" />
         <option value="$PROJECT_DIR$/sources/structures/Tree.h" />
+        <option value="$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp" />
       </list>
     </option>
   </component>
@@ -295,7 +196,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="27" />
     <option name="width" value="1366" />
     <option name="height" value="741" />
@@ -506,7 +407,7 @@
       <workItem from="1524637449105" duration="18328000" />
       <workItem from="1524725171365" duration="1790000" />
       <workItem from="1524727012122" duration="14264000" />
-      <workItem from="1524814676614" duration="5424000" />
+      <workItem from="1524814676614" duration="8856000" />
     </task>
     <servers />
   </component>
@@ -543,7 +444,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125087000" />
+    <option name="totallyTimeSpent" value="128519000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -555,16 +456,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="1" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49874055" visible="true" weight="0.18628912" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32885906" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.4614094" />
+      <window_info active="true" anchor="bottom" id="Messages" order="1" visible="true" weight="0.4614094" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.18071161" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3286517" />
       <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.33221477" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.33221477" />
       <window_info id="Structure" order="2" sideWeight="0.50125945" side_tool="true" weight="0.22354695" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32885906" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -596,11 +497,6 @@
           <url>file://$PROJECT_DIR$/sources/legacy/Tree.h</url>
           <line>100</line>
           <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp</url>
-          <line>129</line>
-          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="74" />
@@ -671,7 +567,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>glp_set_obj_dir(this, GLP_MAX)</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -976,8 +872,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/structures/Tree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+        <state relative-caret-position="193">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="e#102#119#0" expanded="true" />
           </folding>
@@ -986,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/algortihms/LinearProgrammingSolver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="229">
+          <caret line="236" column="63" selection-start-line="236" selection-start-column="63" selection-end-line="236" selection-end-column="63" />
           <folding>
             <element signature="e#41#77#0" expanded="true" />
           </folding>

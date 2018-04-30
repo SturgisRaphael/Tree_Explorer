@@ -198,12 +198,14 @@ void LinearProgrammingSolver::PI_r(Tree<Tupple<int, double>> *binaryTree, int ba
 	if(binaryTree->edges.empty())
 	{
 		binaryTree->PI_r[battery] = 0.0;
-		//binaryTree->origin[battery] = nullptr;
+		binaryTree->PI_r_origin[battery] = Tupple<int, int>(-1,-1);
+		binaryTree->PI_r_batterySplit[battery] = Tupple<int, int>(-1,-1);
 	}
 	else if(battery < 2)
 	{
 		binaryTree->PI_r[battery] = 0.0;
-		//binaryTree->origin[battery] = nullptr;
+		binaryTree->PI_r_origin[battery] = Tupple<int, int>(-1,-1);
+		binaryTree->PI_r_batterySplit[battery] = Tupple<int, int>(-1,-1);
 	}
 	else if(binaryTree->edges.size() == 1)
 	{
@@ -211,7 +213,8 @@ void LinearProgrammingSolver::PI_r(Tree<Tupple<int, double>> *binaryTree, int ba
 		int w = binaryTree->edges[0]->getWeight().getA();
 
 		binaryTree->PI_r[battery] = beta + binaryTree->edges[0]->getChild()->PI_r[battery - 2*w];
-		//binaryTree->origin[battery] = Tupple<int, int>(battery, 0);
+		binaryTree->PI_r_origin[battery] = Tupple<int, int>(binaryTree->edges[0]->getId(),-1);
+		binaryTree->PI_r_batterySplit[battery] = Tupple<int, int>(battery - 2*w,-1);
 	} else
 	{
 		double beta1 = binaryTree->edges[0]->getWeight().getB();
@@ -221,13 +224,17 @@ void LinearProgrammingSolver::PI_r(Tree<Tupple<int, double>> *binaryTree, int ba
 		int w2 = binaryTree->edges[1]->getWeight().getA();
 
 		double max = beta1 + binaryTree->edges[0]->getChild()->PI_r[battery-2*w1];
-		Tupple<int, int> originMax = Tupple<int, int>(battery, 0);
+		Tupple<int, int> maxOrigin = Tupple<int, int>(binaryTree->edges[0]->getId(), -1);
+		Tupple<int, int> maxBatterySplit = Tupple<int, int>(battery-2*w1, -1);
+
 		for(int b = 2*w1 + 2*w2; b < battery - w1 - w2; b++)
 		{
 			if(max < beta1 + binaryTree->edges[0]->getChild()->PI_r[battery - b] + beta2 + binaryTree->edges[1]->getChild()->PI_r[b])
 			{
 				max = beta1 + binaryTree->edges[0]->getChild()->PI_r[battery - b] + beta2 + binaryTree->edges[1]->getChild()->PI_r[b];
-				originMax = Tupple<int, int>(battery - b, b);
+
+				maxOrigin = Tupple<int, int>(binaryTree->edges[0]->getId(), -1);
+				maxBatterySplit = Tupple<int, int>(b, battery-b);
 			}
 		}
 

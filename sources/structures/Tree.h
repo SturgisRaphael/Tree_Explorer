@@ -10,6 +10,8 @@
 #include <ostream>
 #include "Edge.h"
 #include "Tupple.h"
+#include "../legacy/Tree.h"
+#include "Tree.h"
 
 #define MAX_BATTERY 10000
 
@@ -18,11 +20,12 @@ using namespace std;
 template <class T>
 class Tree {
 protected:
+	int* index;
 	string label = "no label";		    ///label for current node
 	Edge<T>* edgeToParent = nullptr;	///pointer to parent if he exists
 	vector<Edge<T>*> edges;			    ///list of child nodes
-	double PI_r[MAX_BATTERY];
-	double PI_f[MAX_BATTERY];
+	double PI_r[MAX_BATTERY]{};
+	double PI_f[MAX_BATTERY]{};
 
 	Tupple<int, int> PI_r_origin[MAX_BATTERY];
 	Tupple<int, int> PI_f_origin[MAX_BATTERY];
@@ -31,9 +34,14 @@ protected:
 	Tupple<int, int> PI_f_batterySplit[MAX_BATTERY];
 
 	friend class LinearProgrammingSolver;
+	friend class TreeGenerator;
+
 
 public:
-	explicit Tree(const string &label) : label(label) {Edge<T>::reset();}
+
+	Tree(int* index, const string &label) : index(index), label(label) {}
+
+	Tree(int* index, const string &label, Edge<T> *edgeToParent) : index(index), label(label), edgeToParent(edgeToParent) {}
 
 	const double *getPI_r() const;
 
@@ -47,7 +55,6 @@ public:
 
 	const Tupple<int, int> *getPI_f_batterySplit() const;
 
-	Tree(const string &label, Edge<T> *edgeToParent) : label(label), edgeToParent(edgeToParent) {}
 
 	const string &getLabel() const {
 		return label;
@@ -147,8 +154,9 @@ public:
 		for(Edge<T>*c : this->edges)
 			if(c->getChild()->label == label)
 				return nullptr;
-		auto *child = new Tree(label, nullptr);
-		auto *edge = new Edge<T>(this, child);
+		auto *child = new Tree(index, label, nullptr);
+		auto *edge = new Edge<T>(this, child, *index);
+		*index += 1;
 		child->setEdgeToParent(edge);
 		this->edges.push_back(edge);
 		return child;
@@ -162,7 +170,7 @@ public:
 		for(Edge<T>*c : this->edges)
 			if(c->getChild()->label == label)
 				return nullptr;
-		auto *child = new Tree<T>(label, nullptr);
+		auto *child = new Tree<T>(index, label, nullptr);
 		auto *edge = new Edge<T>(this, child, id, weight);
 		child->setEdgeToParent(edge);
 		this->edges.push_back(edge);
@@ -182,7 +190,7 @@ public:
 
 			if (tmp->getChild()->getLabel() != "Null") {
 
-				auto *relay = new Tree("Null");
+				auto *relay = new Tree(index, "Null");
 				tmp->setParent(relay);
 				relay->addEdge(tmp);
 
@@ -191,7 +199,7 @@ public:
 				Tree<T>::edges[1] = nullEdge;
 				relay->setEdgeToParent(nullEdge);
 
-				auto *child = new Tree<T>(label, nullptr);
+				auto *child = new Tree<T>(nullptr, label, nullptr);
 				auto *edge = new Edge<T>(relay, child, id, weight);
 				child->setEdgeToParent(edge);
 				relay->edges.push_back(edge);
@@ -204,8 +212,22 @@ public:
 		}
 	}
 
+	Tree<int> *findChild(string label)
+	{
+		if(this->label == label)
+			return this;
+		Tree<int> *tmp;
+		for(Edge<T>* edge : edges)
+		{
+			tmp = edge->getChild()->findChild(label);
+			if(tmp != nullptr)
+			return tmp;
+		}
+		return nullptr;
+	}
+
 	void binarize(T nullWeight){
-		auto *tree = new Tree<T>(this->getLabel());
+		auto *tree = new Tree<T>(index, this->getLabel());
 		binarize(tree, nullWeight);
 	}
 
@@ -261,24 +283,70 @@ public:
 			delete ed;
 	}
 
-	Tree<T> *copy()
+	Tree<T> *copy(int *index)
 	{
-		auto *tree = new Tree<T>(this->getLabel());
-		copy(tree);
+		auto *tree = new Tree<T>(index, this->getLabel());
+		copy(tree, index);
 		return tree;
 	}
 
-private:
-	void copy(Tree<T> *tree){
-		if(tree->edges.size() != 0)
+	Tree<T>* getRoot(){
+		Tree<T> *current = this;
+		while(current->edgeToParent != nullptr)
+			current = current->edgeToParent->getParent();
+		return current;
+	}
+
+	void getListLeaf(vector<Tree<int>*> *output) {
+		if(this->edges.size() == 0)
+			output->push_back(this);
+		else{
+			for(Edge<T>* e: edges)
+				e->getChild()->getListLeaf(output);
+		}
+	}
+
+	void reId(){
+		int index = 0;
+		reId(&index);
+
+		*this->index = index;
+	}
+
+	void reLabel(){
+		if(edgeToParent == nullptr)
+			label = "root";
+		else
+			label = std::to_string(edgeToParent->getId());
+
+		for(Edge<T> *e : edges)
 		{
-			for(int i = 0; i < tree->edges.size(); i++)
+			e->getChild()->reLabel();
+		}
+	}
+
+	void reId(int* index){
+		for(Edge<T> *e : edges)
+		{
+			e->setId(*index);
+			*index += 1;
+			e->getChild()->reId(index);
+		}
+	}
+
+private:
+	void copy(Tree<T> *tree, int *index){
+		if(this->edges.size() != 0)
+		{
+			for(int i = 0; i < this->edges.size(); i++)
 			{
-				int id = tree->edges[i]->getId();
-				string label = tree->edges[i]->getChild()->getLabel();
-				T weight = tree->edges[i]->getChild()->getWeight();
+				int id = this->edges[i]->getId();
+				if(*index < id)
+					*index = id;
+				string label = this->edges[i]->getChild()->getLabel();
+				T weight = this->edges[i]->getWeight();
 				tree->addChild(label, id, weight);
-				this->copy(tree->getChild(i));
+				this->getChild(i)->copy(tree->getChild(i), index);
 			}
 		}
 	}

@@ -7,7 +7,9 @@
 
 
 TEST(Tree, countEdges) {
-	Tree<int> tree = Tree<int>("root");
+	int index = 0;
+
+	Tree<int> tree = Tree<int>(&index, "root");
 	tree.addChild("1");
 	tree.addChild("2");
 	tree.addChild("3");
@@ -19,21 +21,27 @@ TEST(Tree, countEdges) {
 
 
 TEST(Tree, Tree_Equality_Test) {
-	Tree<int> tree1 = Tree<int>("root");
+	int index = 0;
+
+	Tree<int> tree1 = Tree<int>(&index, "root");
 	tree1.addChild("1");
 	tree1.addChild("2");
 	tree1.addChild("3");
 	tree1.getChild("3")->addChild("3.1");
 	tree1.getChild("3")->addChild("3.2");
 
-	Tree<int> tree2 = Tree<int>("root");
+	index = 0;
+
+	Tree<int> tree2 = Tree<int>(&index, "root");
 	tree2.addChild("1");
 	tree2.addChild("2");
 	tree2.addChild("3");
 	tree2.getChild("3")->addChild("3.1");
 	tree2.getChild("3")->addChild("3.2");
 
-	Tree<int> tree3 = Tree<int>("root");
+	 index = 0;
+
+	Tree<int> tree3 = Tree<int>(&index, "root");
 	tree3.addChild("1");
 	tree3.addChild("2");
 	tree3.getChild("2")->addChild("2.1");
@@ -41,7 +49,9 @@ TEST(Tree, Tree_Equality_Test) {
 	tree3.getChild("3")->addChild("3.1");
 	tree3.getChild("3")->addChild("3.2");
 
-	Tree<int> tree4 = Tree<int>("root");
+	index = 0;
+
+	Tree<int> tree4 = Tree<int>(&index, "root");
 	tree4.addChild("1");
 	tree4.addChild("3");
 
@@ -51,7 +61,8 @@ TEST(Tree, Tree_Equality_Test) {
 }
 
 TEST(BinaryTree, all) {
-	Tree<int> binaryTree = Tree<int>("root");
+	int index = 0;
+	Tree<int> binaryTree = Tree<int>(&index, "root");
 	binaryTree.addChildBin("1", 1, 0, 0);
 	binaryTree.addChildBin("2", 2, 0, 0);
 	binaryTree.addChildBin("3", 3, 0, 0);
@@ -59,7 +70,8 @@ TEST(BinaryTree, all) {
 
 	binaryTree.binarize(-1);
 
-	Tree<int> comp = Tree<int>("root");
+	index = 0;
+	Tree<int> comp = Tree<int>(&index, "root");
 	comp.addChild("1");
 	comp.addChild("Null");
 	comp.getChild("Null")->addChild("2");
@@ -68,4 +80,52 @@ TEST(BinaryTree, all) {
 	comp.getChild("Null")->getChild("Null")->addChild("4");
 
 	ASSERT_EQ(binaryTree, comp);
+}
+
+TEST(Copy, copy) {
+	int index = 0;
+
+	Tree<int> tree1 = Tree<int>(&index, "root");
+	tree1.addChild("1");
+	tree1.addChild("2");
+	tree1.addChild("3");
+	tree1.getChild("3")->addChild("3.1");
+	tree1.getChild("3")->addChild("3.2");
+
+
+	int index2 = 0;
+
+	Tree<int> tree2 = *tree1.copy(&index2);
+
+	ASSERT_EQ(tree1, tree2);
+}
+
+TEST(Copy, copy_add) {
+	int index = 0;
+
+	Tree<int> tree1 = Tree<int>(&index, "root");
+	tree1.addChild("1");
+	tree1.addChild("2");
+	tree1.addChild("3");
+	tree1.getChild("3")->addChild("3.1");
+	tree1.getChild("3")->addChild("3.2");
+
+	int index2 = 0;
+
+	Tree<int> tree2 = Tree<int>(&index2, "root");
+	tree2.addChild("1");
+	tree2.addChild("2");
+	tree2.addChild("3");
+	tree2.getChild("3")->addChild("3.1");
+	tree2.getChild("3")->addChild("3.2");
+	tree2.addChild("4");
+
+	int index3 = 0;
+
+	Tree<int> tree3 = *tree1.copy(&index3);
+	tree3.addChild("4");
+
+	ASSERT_EQ(tree2, tree3);
+
+	ASSERT_NE(tree1, tree3);
 }

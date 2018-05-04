@@ -4,13 +4,17 @@
 
 
 #include <iostream>
+#include <sstream>
+#include <string>
 #include "algortihms/LinearProgrammingSolver.h"
 #include "utils/FileManager.h"
+#include "algortihms/TreeGenerator.h"
 
 int main(int argc, char* argv[])
 {
-/*
-	Tree<int> *tree = new Tree<int>("root");
+	/*
+	int index = 0;
+	Tree<int> *tree = new Tree<int>(&index, "root");
 	tree->addChild("1");
 	tree->addChild("2");
 	tree->getChild("2")->addChild("2.1");
@@ -21,16 +25,34 @@ int main(int argc, char* argv[])
 
 	AgentTreeExplorationInstance atei = AgentTreeExplorationInstance
 			(tree, 2, 4);
-*/
 
-	AgentTreeExplorationInstance atei = FileManager::readInstanceFromFile("../data/testFiles/test1.2.txt");
+	//AgentTreeExplorationInstance atei = FileManager::readInstanceFromFile("../data/testFiles/test1.2.txt");
+
+	cout << "Linear Program:" << endl;
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
 	solver.solver(&atei);
 
-	solver.getLp().writeMPS("mps.txt");
-	solver.getLp().writeSol("sol.txt");
-	solver.getLp().printSol("print.txt");
+	cout << "Optimal:" << endl;
+
+	solver.optiSolver(&atei);
+
+	*/
+
+	vector<Tree<int>*> vector = TreeGenerator::generateBinaryTrees(3);
+
+	unsigned long treeNumber = vector.size();
+	for(Tree<int>* t: vector)
+	{
+		AgentTreeExplorationInstance atei =	AgentTreeExplorationInstance(t, 3, 2);
+		std::stringstream ss;
+		ss << "../data/binaryTrees/tree" << treeNumber << ".txt";
+
+		std::string s = ss.str();
+
+		FileManager::writeInstanceToFile(s, &atei);
+		treeNumber--;
+	}
 
 	return 0;
 }

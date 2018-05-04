@@ -18,10 +18,7 @@ LinearProgrammingSolver::solver(AgentTreeExplorationInstance *atei) {
 
 	vector<Edge<int> *> newWalk;
 
-	double oldObjective = -2;
-	double objective = -1;
-
-	int counter = 0, limitOnWalks = 0;
+	int counter = 0;
 
 	while(counter < LIMIT){
 		counter++;
@@ -36,12 +33,11 @@ LinearProgrammingSolver::solver(AgentTreeExplorationInstance *atei) {
 
 		lp.simplex(nullptr);
 
-
-
-		oldObjective = objective;
-		objective = lp.getObjVal();
-
 		double* matrix = extractBeta_i(m);
+
+		Tree<Tupple<int, double>> *binaryTree = makeBinaryTree(atei->getTree(), matrix);
+
+		newWalk = findBestWalk(atei->getTree(), binaryTree, atei->getStartingBattery());
 
 		cout << "Beta : ";
 		for(int i = 0; i < m; i++)
@@ -50,37 +46,27 @@ LinearProgrammingSolver::solver(AgentTreeExplorationInstance *atei) {
 
 		printSolution();
 
-		cout << "----------------------------------" << endl;
+		printWalk(newWalk);
 
-		Tree<Tupple<int, double>> *binaryTree = makeBinaryTree(atei->getTree(), matrix);
+		cout << endl << "----------------------------------" << endl;
 
-		newWalk = findBestWalk(atei->getTree(), binaryTree, atei->getStartingBattery());
+		//walks.push_back(newWalk);
 
-		walks.push_back(newWalk);
-		/*
 		if(!isInWalks(walks, newWalk))
 		{
-			limitOnWalks = 0;
 			walks.push_back(newWalk);
 		} else
 			break;
-		*/
 
+
+		/*
 		int count = 0;
 		for(int i = 0; i < m; i++)
 			count += matrix[i];
 
 		if(count <= lp.getRowDual(1) + 0.0000001)
 			break;
-
-		 /*
-		else if(limitOnWalks >= 2)
-			break;
-		else
-		{
-			limitOnWalks++;
-			walks.push_back(newWalk);
-		}*/
+		*/
 	}
 
 	printSolution();
@@ -263,7 +249,8 @@ double* LinearProgrammingSolver::extractBeta_i(int m){
 
 Tree<Tupple<int, double>> *LinearProgrammingSolver::makeBinaryTree(Tree<int> *tree, double *matrix)
 {
-	auto *binaryTree = new Tree<Tupple<int, double>>(tree->getLabel());
+	int index = 0;
+	auto *binaryTree = new Tree<Tupple<int, double>>(&index, tree->getLabel());
 	makeBinaryTreeRecursion(tree, binaryTree, matrix);
 	return binaryTree;
 }
@@ -418,7 +405,7 @@ void LinearProgrammingSolver::PI_f(Tree<Tupple<int, double>> *binaryTree, int ba
 		double max = beta1 + binaryTree->edges[0]->getChild()->PI_f[battery-w1];
 		Tupple<int, int> maxOrigin = Tupple<int, int>(binaryTree->edges[0]->getId(), -1);
 		Tupple<int, int> maxBatterySplit = Tupple<int, int>(battery-w1, -1);
-		for(int b = 2*w1 + w2; b < battery; b++)
+		for(int b = 2*w1 + w2; b <= battery; b++)
 		{
 			if(max < beta1 + binaryTree->edges[0]->getChild()->PI_r[battery - b] + beta2 + binaryTree->edges[1]->getChild()->PI_f[b-(2*w1 + w2)])
 			{
@@ -428,7 +415,7 @@ void LinearProgrammingSolver::PI_f(Tree<Tupple<int, double>> *binaryTree, int ba
 			}
 
 		}
-		for(int b = 2*w2 + w1; b < battery; b++)
+		for(int b = 2*w2 + w1; b <= battery; b++)
 		{
 			if(max < beta1 + binaryTree->edges[0]->getChild()->PI_f[battery - b] + beta2 + binaryTree->edges[1]->getChild()->PI_r[b - 2*w2 - w1])
 			{
@@ -563,18 +550,17 @@ bool LinearProgrammingSolver::isInWalks(vector<vector<Edge<int> *>> walks,
 }
 
 void LinearProgrammingSolver::printWalks(vector<vector<Edge<int> *>> vector) {
+	int id = 1;
 	for(auto v: vector) {
-		cout << "[";
-
-		for(auto e: v)
-			cout << "(" << e->getParent()->getLabel() << "<->" << e->getChild()->getLabel() << "), ";
-
+		cout << id <<" [" ;
+		printWalk(v);
 		cout << "]" << endl;
+		id++;
 	}
 }
 
 void
-LinearProgrammingSolver::walkGenerator(vector<vector<Edge<int> *>> outputVector,
+LinearProgrammingSolver::walkGenerator(vector<vector<Edge<int> *>> *outputVector,
                                        Edge<int> *origin,
                                        vector<Edge<int> *> currentWalk,
                                        int battery, Tree<int> *tree) {
@@ -582,27 +568,21 @@ LinearProgrammingSolver::walkGenerator(vector<vector<Edge<int> *>> outputVector,
 	{
 		if(origin != nullptr)
 		{
-			if(tree->getIndexOfEdge(origin->getId()) != -1)//comes from beneath
+
+			for(int i = 0; i < tree->edges.size(); i++)
 			{
-				for(int i = tree->getIndexOfEdge(origin->getId()); i < tree->edges.size(); i++)
-				{
+				if(tree->edges[i]->getId() != origin->getId()) {
 					vector<Edge<int> *> newWalk = currentWalk;
 					newWalk.push_back(tree->edges[i]);
-					walkGenerator(outputVector, tree->edges[i], newWalk, battery-1, tree->edges[i]->getChild());
-				}
-
-
-			} else{
-				for(int i = 0; i < tree->edges.size(); i++)
-				{
-					vector<Edge<int> *> newWalk = currentWalk;
-					newWalk.push_back(tree->edges[i]);
-					walkGenerator(outputVector, tree->edges[i], newWalk, battery-1, tree->edges[i]->getChild());
+					walkGenerator(outputVector, tree->edges[i], newWalk, battery - 1, tree->edges[i]->getChild());
 				}
 			}
-			vector<Edge<int> *> newWalk = currentWalk;
-			newWalk.push_back(tree->edgeToParent);
-			walkGenerator(outputVector, tree->edgeToParent, newWalk, battery-1, tree->edgeToParent->getChild());
+
+			if(tree->edgeToParent != nullptr) {
+				vector<Edge<int> *> newWalk = currentWalk;
+				newWalk.push_back(tree->edgeToParent);
+				walkGenerator(outputVector, tree->edgeToParent, newWalk, battery - 1, tree->edgeToParent->getParent());
+			}
 		}
 		else{
 			for(int i = 0; i < tree->edges.size(); i++)
@@ -614,7 +594,35 @@ LinearProgrammingSolver::walkGenerator(vector<vector<Edge<int> *>> outputVector,
 		}
 	}
 	else
-		outputVector.push_back(currentWalk);
+		outputVector->push_back(currentWalk);
+}
+
+void LinearProgrammingSolver::printWalk(vector<Edge<int> *> vector) {
+	for(auto e: vector)
+		cout << "(" << e->getParent()->getLabel() << "<->" << e->getChild()->getLabel() << "), ";
+}
+
+AgentTreeExplorationSolution LinearProgrammingSolver::optiSolver(AgentTreeExplorationInstance *atei) {
+	vector<vector<Edge<int> *>> walks;
+	vector<Edge<int> *> tmp;
+
+	walkGenerator(&walks, nullptr, tmp, atei->getStartingBattery(), atei->getTree());
+
+	int p = static_cast<int>(walks.size()), m = atei->getTree()
+			->numberOfEdges();
+
+	initializeGlpk(p, m, atei->getNumberOfAgents());
+
+	loadInstanceInGlpk(atei, walks);
+
+	lp.simplex(nullptr);
+
+
+	printSolution();
+
+	printWalks(walks);
+
+	return AgentTreeExplorationSolution();
 }
 
 

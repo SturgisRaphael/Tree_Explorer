@@ -57,7 +57,9 @@ public:
 
 	void printWalks(vector<vector<Edge<int> *>> vector);
 
-	void walkGenerator(vector<vector<Edge<int> *>> outputVector, Edge<int> * origin, vector<Edge<int> *>currentWalk, int battery, Tree<int> *tree);
+	void walkGenerator(vector<vector<Edge<int> *>> *outputVector, Edge<int> * origin, vector<Edge<int> *>currentWalk, int battery, Tree<int> *tree);
+
+	void printWalk(vector<Edge<int> *> vector);
 };
 
 template<class T>

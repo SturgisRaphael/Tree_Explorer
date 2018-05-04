@@ -24,9 +24,10 @@ AgentTreeExplorationInstance FileManager::readInstanceFromFile(string path) {
 		exit(1);
 	}
 
+	int index = 0;
 
 	std::getline(infile, line);
-	Tree<int>* root = new Tree<int>(line);
+	Tree<int>* root = new Tree<int>(&index, line);
 	Tree<int> *current_parent = root, *tmp = root;
 
 	int current_level = 0, i;

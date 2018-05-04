@@ -8,8 +8,6 @@
 
 #include "Tree.h"
 
-static long counter = 0;
-
 template <class T>
 class Tree;
 
@@ -26,16 +24,8 @@ public:
 
 	Edge(long id) : id(id) {}
 
-	Edge(Tree<T> *parent, Tree<T> *child) : parent(parent), child(child) {
-		id = counter;
-		counter++;
-	}
-
-	Edge(Tree<T> *parent, Tree<T> *child, T weight) : parent(parent),
-	                                                    child(child),
-	                                                    weight(weight) {
-		id = counter;
-		counter++;
+	Edge(Tree<T> *parent, Tree<T> *child ,int index) : parent(parent), child(child) {
+		id = index;
 	}
 
 	Edge(Tree<T> *parent, Tree<T> *child, long id, T weight) : parent(parent),
@@ -63,9 +53,8 @@ public:
 		Edge::parent = parent;
 	}
 
-	static void reset()
-	{
-		counter = 0;
+	void setId(long id) {
+		Edge::id = id;
 	}
 
 	virtual ~Edge() {

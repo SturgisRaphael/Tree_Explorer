@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/zampieri/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/cmake -E remove -f
+RM = /home/zampieri/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raphael/Master-informatique/M1/Stage/Tree_Explorer
+CMAKE_SOURCE_DIR = /home/zampieri/Raphael/Tree_Explorer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug
+CMAKE_BINARY_DIR = /home/zampieri/Raphael/Tree_Explorer/cmake-build-debug
 
 # Utility rule file for NightlyCoverage.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmak
 include tests/CMakeFiles/NightlyCoverage.dir/progress.make
 
 tests/CMakeFiles/NightlyCoverage:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/tests && /home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4445.84/bin/cmake/bin/ctest -D NightlyCoverage
+	cd /home/zampieri/Raphael/Tree_Explorer/cmake-build-debug/tests && /home/zampieri/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/ctest -D NightlyCoverage
 
 NightlyCoverage: tests/CMakeFiles/NightlyCoverage
 NightlyCoverage: tests/CMakeFiles/NightlyCoverage.dir/build.make
@@ -67,10 +67,10 @@ tests/CMakeFiles/NightlyCoverage.dir/build: NightlyCoverage
 .PHONY : tests/CMakeFiles/NightlyCoverage.dir/build
 
 tests/CMakeFiles/NightlyCoverage.dir/clean:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/tests && $(CMAKE_COMMAND) -P CMakeFiles/NightlyCoverage.dir/cmake_clean.cmake
+	cd /home/zampieri/Raphael/Tree_Explorer/cmake-build-debug/tests && $(CMAKE_COMMAND) -P CMakeFiles/NightlyCoverage.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/NightlyCoverage.dir/clean
 
 tests/CMakeFiles/NightlyCoverage.dir/depend:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raphael/Master-informatique/M1/Stage/Tree_Explorer /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/tests /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/tests/CMakeFiles/NightlyCoverage.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zampieri/Raphael/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zampieri/Raphael/Tree_Explorer /home/zampieri/Raphael/Tree_Explorer/tests /home/zampieri/Raphael/Tree_Explorer/cmake-build-debug /home/zampieri/Raphael/Tree_Explorer/cmake-build-debug/tests /home/zampieri/Raphael/Tree_Explorer/cmake-build-debug/tests/CMakeFiles/NightlyCoverage.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/NightlyCoverage.dir/depend
 

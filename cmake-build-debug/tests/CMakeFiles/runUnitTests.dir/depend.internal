@@ -24,15 +24,48 @@ tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tripple.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/Algorithms/LinearProgrammingSolver_test.cpp
+ /home/zampieri/Raphael/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/glpk/glpk_interface.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/legacy/BinaryTree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/legacy/Tree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Edge.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Tree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Tripple.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Tupple.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/utils/FileManager.h
+ /home/zampieri/Raphael/Tree_Explorer/tests/Algorithms/LinearProgrammingSolver_test.cpp
+tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o
+ ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
+ ../tests/lib/googletest-master/googletest/include/gtest/gtest-message.h
+ ../tests/lib/googletest-master/googletest/include/gtest/gtest-param-test.h
+ ../tests/lib/googletest-master/googletest/include/gtest/gtest-printers.h
+ ../tests/lib/googletest-master/googletest/include/gtest/gtest-test-part.h
+ ../tests/lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+ ../tests/lib/googletest-master/googletest/include/gtest/gtest.h
+ ../tests/lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
+ ../tests/lib/googletest-master/googletest/include/gtest/gtest_prod.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-linked_ptr.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-param-util-generated.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
+ ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/algortihms/TreeGenerator.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/legacy/BinaryTree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/legacy/Tree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Edge.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Tree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Tupple.h
+ /home/zampieri/Raphael/Tree_Explorer/tests/Algorithms/TreeGenerator_test.cpp
 tests/CMakeFiles/runUnitTests.dir/glpk/glpk_interface_test.cpp.o
  ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../tests/lib/googletest-master/googletest/include/gtest/gtest-message.h
@@ -56,8 +89,8 @@ tests/CMakeFiles/runUnitTests.dir/glpk/glpk_interface_test.cpp.o
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/glpk/glpk_interface_test.cpp
+ /home/zampieri/Raphael/Tree_Explorer/sources/glpk/glpk_interface.h
+ /home/zampieri/Raphael/Tree_Explorer/tests/glpk/glpk_interface_test.cpp
 tests/CMakeFiles/runUnitTests.dir/gtest.cpp.o
  ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../tests/lib/googletest-master/googletest/include/gtest/gtest-message.h
@@ -81,7 +114,7 @@ tests/CMakeFiles/runUnitTests.dir/gtest.cpp.o
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/gtest.cpp
+ /home/zampieri/Raphael/Tree_Explorer/tests/gtest.cpp
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o
  ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../tests/lib/googletest-master/googletest/include/gtest/gtest-message.h
@@ -105,10 +138,12 @@ tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/structures/Tree_test.cpp
+ /home/zampieri/Raphael/Tree_Explorer/sources/legacy/BinaryTree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/legacy/Tree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Edge.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Tree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Tupple.h
+ /home/zampieri/Raphael/Tree_Explorer/tests/structures/Tree_test.cpp
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o
  ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../tests/lib/googletest-master/googletest/include/gtest/gtest-message.h
@@ -132,10 +167,12 @@ tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.h
- /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/utils/FileManager_test.cpp
+ /home/zampieri/Raphael/Tree_Explorer/sources/legacy/BinaryTree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/legacy/Tree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Edge.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Tree.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/structures/Tupple.h
+ /home/zampieri/Raphael/Tree_Explorer/sources/utils/FileManager.h
+ /home/zampieri/Raphael/Tree_Explorer/tests/utils/FileManager_test.cpp

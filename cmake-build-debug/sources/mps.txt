@@ -1,8 +1,8 @@
 * Problem:    atei
 * Class:      LP
-* Rows:       13
-* Columns:    7
-* Non-zeros:  15
+* Rows:       21
+* Columns:    109
+* Non-zeros:  418
 * Format:     Free MPS
 *
 NAME atei
@@ -15,15 +15,222 @@ ROWS
  L beta4
  L beta5
  L beta6
+ L beta7
+ L beta8
+ L beta9
+ L beta10
  L gamma1
  L gamma2
  L gamma3
  L gamma4
  L gamma5
  L gamma6
+ L gamma7
+ L gamma8
+ L gamma9
+ L gamma10
 COLUMNS
- X1 beta2 -1 beta1 -1
+ X1 beta6 -1 beta4 -1
+ X1 beta3 -1 beta2 -1
  X1 alpha 1
+ X2 beta8 -1 beta5 -1
+ X2 beta3 -1 beta2 -1
+ X2 alpha 1
+ X3 beta10 -1 beta9 -1
+ X3 beta1 -1 alpha 1
+ X4 beta8 -1 beta1 -1
+ X4 alpha 1
+ X5 beta10 -1 beta9 -1
+ X5 beta1 -1 alpha 1
+ X6 beta8 -1 beta7 -1
+ X6 beta6 -1 beta2 -1
+ X6 alpha 1
+ X7 beta10 -1 beta9 -1
+ X7 beta1 -1 alpha 1
+ X8 beta10 -1 beta9 -1
+ X8 beta1 -1 alpha 1
+ X9 beta10 -1 beta9 -1
+ X9 beta1 -1 alpha 1
+ X10 beta10 -1 beta9 -1
+ X10 beta1 -1 alpha 1
+ X11 beta10 -1 beta9 -1
+ X11 beta1 -1 alpha 1
+ X12 beta10 -1 beta9 -1
+ X12 beta1 -1 alpha 1
+ X13 beta10 -1 beta9 -1
+ X13 beta1 -1 alpha 1
+ X14 beta10 -1 beta9 -1
+ X14 beta1 -1 alpha 1
+ X15 beta10 -1 beta9 -1
+ X15 beta1 -1 alpha 1
+ X16 beta10 -1 beta9 -1
+ X16 beta1 -1 alpha 1
+ X17 beta10 -1 beta9 -1
+ X17 beta1 -1 alpha 1
+ X18 beta10 -1 beta9 -1
+ X18 beta1 -1 alpha 1
+ X19 beta10 -1 beta9 -1
+ X19 beta1 -1 alpha 1
+ X20 beta10 -1 beta9 -1
+ X20 beta1 -1 alpha 1
+ X21 beta10 -1 beta9 -1
+ X21 beta1 -1 alpha 1
+ X22 beta10 -1 beta9 -1
+ X22 beta1 -1 alpha 1
+ X23 beta10 -1 beta9 -1
+ X23 beta1 -1 alpha 1
+ X24 beta10 -1 beta9 -1
+ X24 beta1 -1 alpha 1
+ X25 beta10 -1 beta9 -1
+ X25 beta1 -1 alpha 1
+ X26 beta10 -1 beta9 -1
+ X26 beta1 -1 alpha 1
+ X27 beta10 -1 beta9 -1
+ X27 beta1 -1 alpha 1
+ X28 beta10 -1 beta9 -1
+ X28 beta1 -1 alpha 1
+ X29 beta10 -1 beta9 -1
+ X29 beta1 -1 alpha 1
+ X30 beta10 -1 beta9 -1
+ X30 beta1 -1 alpha 1
+ X31 beta10 -1 beta9 -1
+ X31 beta1 -1 alpha 1
+ X32 beta10 -1 beta9 -1
+ X32 beta1 -1 alpha 1
+ X33 beta10 -1 beta9 -1
+ X33 beta1 -1 alpha 1
+ X34 beta10 -1 beta9 -1
+ X34 beta1 -1 alpha 1
+ X35 beta10 -1 beta9 -1
+ X35 beta1 -1 alpha 1
+ X36 beta10 -1 beta9 -1
+ X36 beta1 -1 alpha 1
+ X37 beta10 -1 beta9 -1
+ X37 beta1 -1 alpha 1
+ X38 beta10 -1 beta9 -1
+ X38 beta1 -1 alpha 1
+ X39 beta10 -1 beta9 -1
+ X39 beta1 -1 alpha 1
+ X40 beta10 -1 beta9 -1
+ X40 beta1 -1 alpha 1
+ X41 beta10 -1 beta9 -1
+ X41 beta1 -1 alpha 1
+ X42 beta10 -1 beta9 -1
+ X42 beta1 -1 alpha 1
+ X43 beta10 -1 beta9 -1
+ X43 beta1 -1 alpha 1
+ X44 beta10 -1 beta9 -1
+ X44 beta1 -1 alpha 1
+ X45 beta10 -1 beta9 -1
+ X45 beta1 -1 alpha 1
+ X46 beta10 -1 beta9 -1
+ X46 beta1 -1 alpha 1
+ X47 beta10 -1 beta9 -1
+ X47 beta1 -1 alpha 1
+ X48 beta10 -1 beta9 -1
+ X48 beta1 -1 alpha 1
+ X49 beta10 -1 beta9 -1
+ X49 beta1 -1 alpha 1
+ X50 beta10 -1 beta9 -1
+ X50 beta1 -1 alpha 1
+ X51 beta10 -1 beta9 -1
+ X51 beta1 -1 alpha 1
+ X52 beta10 -1 beta9 -1
+ X52 beta1 -1 alpha 1
+ X53 beta10 -1 beta9 -1
+ X53 beta1 -1 alpha 1
+ X54 beta10 -1 beta9 -1
+ X54 beta1 -1 alpha 1
+ X55 beta10 -1 beta9 -1
+ X55 beta1 -1 alpha 1
+ X56 beta10 -1 beta9 -1
+ X56 beta1 -1 alpha 1
+ X57 beta10 -1 beta9 -1
+ X57 beta1 -1 alpha 1
+ X58 beta10 -1 beta9 -1
+ X58 beta1 -1 alpha 1
+ X59 beta10 -1 beta9 -1
+ X59 beta1 -1 alpha 1
+ X60 beta10 -1 beta9 -1
+ X60 beta1 -1 alpha 1
+ X61 beta10 -1 beta9 -1
+ X61 beta1 -1 alpha 1
+ X62 beta10 -1 beta9 -1
+ X62 beta1 -1 alpha 1
+ X63 beta10 -1 beta9 -1
+ X63 beta1 -1 alpha 1
+ X64 beta10 -1 beta9 -1
+ X64 beta1 -1 alpha 1
+ X65 beta10 -1 beta9 -1
+ X65 beta1 -1 alpha 1
+ X66 beta10 -1 beta9 -1
+ X66 beta1 -1 alpha 1
+ X67 beta10 -1 beta9 -1
+ X67 beta1 -1 alpha 1
+ X68 beta10 -1 beta9 -1
+ X68 beta1 -1 alpha 1
+ X69 beta10 -1 beta9 -1
+ X69 beta1 -1 alpha 1
+ X70 beta10 -1 beta9 -1
+ X70 beta1 -1 alpha 1
+ X71 beta10 -1 beta9 -1
+ X71 beta1 -1 alpha 1
+ X72 beta10 -1 beta9 -1
+ X72 beta1 -1 alpha 1
+ X73 beta10 -1 beta9 -1
+ X73 beta1 -1 alpha 1
+ X74 beta10 -1 beta9 -1
+ X74 beta1 -1 alpha 1
+ X75 beta10 -1 beta9 -1
+ X75 beta1 -1 alpha 1
+ X76 beta10 -1 beta9 -1
+ X76 beta1 -1 alpha 1
+ X77 beta10 -1 beta9 -1
+ X77 beta1 -1 alpha 1
+ X78 beta10 -1 beta9 -1
+ X78 beta1 -1 alpha 1
+ X79 beta10 -1 beta9 -1
+ X79 beta1 -1 alpha 1
+ X80 beta10 -1 beta9 -1
+ X80 beta1 -1 alpha 1
+ X81 beta10 -1 beta9 -1
+ X81 beta1 -1 alpha 1
+ X82 beta10 -1 beta9 -1
+ X82 beta1 -1 alpha 1
+ X83 beta10 -1 beta9 -1
+ X83 beta1 -1 alpha 1
+ X84 beta10 -1 beta9 -1
+ X84 beta1 -1 alpha 1
+ X85 beta10 -1 beta9 -1
+ X85 beta1 -1 alpha 1
+ X86 beta10 -1 beta9 -1
+ X86 beta1 -1 alpha 1
+ X87 beta10 -1 beta9 -1
+ X87 beta1 -1 alpha 1
+ X88 beta10 -1 beta9 -1
+ X88 beta1 -1 alpha 1
+ X89 beta10 -1 beta9 -1
+ X89 beta1 -1 alpha 1
+ X90 beta10 -1 beta9 -1
+ X90 beta1 -1 alpha 1
+ X91 beta10 -1 beta9 -1
+ X91 beta1 -1 alpha 1
+ X92 beta10 -1 beta9 -1
+ X92 beta1 -1 alpha 1
+ X93 beta10 -1 beta9 -1
+ X93 beta1 -1 alpha 1
+ X94 beta10 -1 beta9 -1
+ X94 beta1 -1 alpha 1
+ X95 beta10 -1 beta9 -1
+ X95 beta1 -1 alpha 1
+ X96 beta10 -1 beta9 -1
+ X96 beta1 -1 alpha 1
+ X97 beta10 -1 beta9 -1
+ X97 beta1 -1 alpha 1
+ X98 beta10 -1 beta9 -1
+ X98 beta1 -1 alpha 1
+ X99 beta10 -1 beta9 -1
+ X99 beta1 -1 alpha 1
  y1 R0000000 1 gamma1 1
  y1 beta1 1
  y2 R0000000 1 gamma2 1
@@ -36,17 +243,129 @@ COLUMNS
  y5 beta5 1
  y6 R0000000 1 gamma6 1
  y6 beta6 1
+ y7 R0000000 1 gamma7 1
+ y7 beta7 1
+ y8 R0000000 1 gamma8 1
+ y8 beta8 1
+ y9 R0000000 1 gamma9 1
+ y9 beta9 1
+ y10 R0000000 1 gamma10 1
+ y10 beta10 1
 RHS
- RHS1 alpha 4 gamma1 1
+ RHS1 alpha 3 gamma1 1
  RHS1 gamma2 1 gamma3 1
  RHS1 gamma4 1 gamma5 1
- RHS1 gamma6 1
+ RHS1 gamma6 1 gamma7 1
+ RHS1 gamma8 1 gamma9 1
+ RHS1 gamma10 1
 BOUNDS
  UP BND1 X1 1
+ UP BND1 X2 1
+ UP BND1 X3 1
+ UP BND1 X4 1
+ UP BND1 X5 1
+ UP BND1 X6 1
+ UP BND1 X7 1
+ UP BND1 X8 1
+ UP BND1 X9 1
+ UP BND1 X10 1
+ UP BND1 X11 1
+ UP BND1 X12 1
+ UP BND1 X13 1
+ UP BND1 X14 1
+ UP BND1 X15 1
+ UP BND1 X16 1
+ UP BND1 X17 1
+ UP BND1 X18 1
+ UP BND1 X19 1
+ UP BND1 X20 1
+ UP BND1 X21 1
+ UP BND1 X22 1
+ UP BND1 X23 1
+ UP BND1 X24 1
+ UP BND1 X25 1
+ UP BND1 X26 1
+ UP BND1 X27 1
+ UP BND1 X28 1
+ UP BND1 X29 1
+ UP BND1 X30 1
+ UP BND1 X31 1
+ UP BND1 X32 1
+ UP BND1 X33 1
+ UP BND1 X34 1
+ UP BND1 X35 1
+ UP BND1 X36 1
+ UP BND1 X37 1
+ UP BND1 X38 1
+ UP BND1 X39 1
+ UP BND1 X40 1
+ UP BND1 X41 1
+ UP BND1 X42 1
+ UP BND1 X43 1
+ UP BND1 X44 1
+ UP BND1 X45 1
+ UP BND1 X46 1
+ UP BND1 X47 1
+ UP BND1 X48 1
+ UP BND1 X49 1
+ UP BND1 X50 1
+ UP BND1 X51 1
+ UP BND1 X52 1
+ UP BND1 X53 1
+ UP BND1 X54 1
+ UP BND1 X55 1
+ UP BND1 X56 1
+ UP BND1 X57 1
+ UP BND1 X58 1
+ UP BND1 X59 1
+ UP BND1 X60 1
+ UP BND1 X61 1
+ UP BND1 X62 1
+ UP BND1 X63 1
+ UP BND1 X64 1
+ UP BND1 X65 1
+ UP BND1 X66 1
+ UP BND1 X67 1
+ UP BND1 X68 1
+ UP BND1 X69 1
+ UP BND1 X70 1
+ UP BND1 X71 1
+ UP BND1 X72 1
+ UP BND1 X73 1
+ UP BND1 X74 1
+ UP BND1 X75 1
+ UP BND1 X76 1
+ UP BND1 X77 1
+ UP BND1 X78 1
+ UP BND1 X79 1
+ UP BND1 X80 1
+ UP BND1 X81 1
+ UP BND1 X82 1
+ UP BND1 X83 1
+ UP BND1 X84 1
+ UP BND1 X85 1
+ UP BND1 X86 1
+ UP BND1 X87 1
+ UP BND1 X88 1
+ UP BND1 X89 1
+ UP BND1 X90 1
+ UP BND1 X91 1
+ UP BND1 X92 1
+ UP BND1 X93 1
+ UP BND1 X94 1
+ UP BND1 X95 1
+ UP BND1 X96 1
+ UP BND1 X97 1
+ UP BND1 X98 1
+ UP BND1 X99 1
  UP BND1 y1 1
  UP BND1 y2 1
  UP BND1 y3 1
  UP BND1 y4 1
  UP BND1 y5 1
  UP BND1 y6 1
+ UP BND1 y7 1
+ UP BND1 y8 1
+ UP BND1 y9 1
+ UP BND1 y10 1
 ENDATA

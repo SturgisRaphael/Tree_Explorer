@@ -1,35 +1,145 @@
 Problem:    atei
-Rows:       13
-Columns:    7
-Non-zeros:  15
+Rows:       21
+Columns:    109
+Non-zeros:  418
 Status:     OPTIMAL
-Objective:  2 (MAXimum)
+Objective:  9 (MAXimum)
 
    No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 alpha        B              1                           4 
-     2 beta1        NU             0                           0             1 
-     3 beta2        NU             0                           0             1 
-     4 beta3        NU             0                           0             1 
+     1 alpha        NU             3                           3             1 
+     2 beta1        B              0                           0 
+     3 beta2        B             -1                           0 
+     4 beta3        NU             0                           0         < eps
      5 beta4        NU             0                           0             1 
      6 beta5        NU             0                           0             1 
-     7 beta6        NU             0                           0             1 
-     8 gamma1       B              1                           1 
-     9 gamma2       B              1                           1 
-    10 gamma3       B              0                           1 
-    11 gamma4       B              0                           1 
-    12 gamma5       B              0                           1 
-    13 gamma6       B              0                           1 
+     7 beta6        B             -1                           0 
+     8 beta7        NU             0                           0             1 
+     9 beta8        NU             0                           0         < eps
+    10 beta9        NU             0                           0         < eps
+    11 beta10       NU             0                           0             1 
+    12 gamma1       B              1                           1 
+    13 gamma2       B              1                           1 
+    14 gamma3       B              1                           1 
+    15 gamma4       B              1                           1 
+    16 gamma5       B              0                           1 
+    17 gamma6       B              1                           1 
+    18 gamma7       B              1                           1 
+    19 gamma8       B              1                           1 
+    20 gamma9       B              1                           1 
+    21 gamma10      B              1                           1 
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 X1           NU             1             0             1             2 
-     2 y1           B              1             0             1 
-     3 y2           B              1             0             1 
-     4 y3           B              0             0             1 
-     5 y4           B              0             0             1 
-     6 y5           B              0             0             1 
-     7 y6           B              0             0             1 
+     1 X1           B              1             0             1 
+     2 X2           B              0             0             1 
+     3 X3           NU             1             0             1         < eps
+     4 X4           NL             0             0             1            -1 
+     5 X5           B              0             0             1 
+     6 X6           B              1             0             1 
+     7 X7           NL             0             0             1         < eps
+     8 X8           NL             0             0             1         < eps
+     9 X9           NL             0             0             1         < eps
+    10 X10          NL             0             0             1         < eps
+    11 X11          NL             0             0             1         < eps
+    12 X12          NL             0             0             1         < eps
+    13 X13          NL             0             0             1         < eps
+    14 X14          NL             0             0             1         < eps
+    15 X15          NL             0             0             1         < eps
+    16 X16          NL             0             0             1         < eps
+    17 X17          NL             0             0             1         < eps
+    18 X18          NL             0             0             1         < eps
+    19 X19          NL             0             0             1         < eps
+    20 X20          NL             0             0             1         < eps
+    21 X21          NL             0             0             1         < eps
+    22 X22          NL             0             0             1         < eps
+    23 X23          NL             0             0             1         < eps
+    24 X24          NL             0             0             1         < eps
+    25 X25          NL             0             0             1         < eps
+    26 X26          NL             0             0             1         < eps
+    27 X27          NL             0             0             1         < eps
+    28 X28          NL             0             0             1         < eps
+    29 X29          NL             0             0             1         < eps
+    30 X30          NL             0             0             1         < eps
+    31 X31          NL             0             0             1         < eps
+    32 X32          NL             0             0             1         < eps
+    33 X33          NL             0             0             1         < eps
+    34 X34          NL             0             0             1         < eps
+    35 X35          NL             0             0             1         < eps
+    36 X36          NL             0             0             1         < eps
+    37 X37          NL             0             0             1         < eps
+    38 X38          NL             0             0             1         < eps
+    39 X39          NL             0             0             1         < eps
+    40 X40          NL             0             0             1         < eps
+    41 X41          NL             0             0             1         < eps
+    42 X42          NL             0             0             1         < eps
+    43 X43          NL             0             0             1         < eps
+    44 X44          NL             0             0             1         < eps
+    45 X45          NL             0             0             1         < eps
+    46 X46          NL             0             0             1         < eps
+    47 X47          NL             0             0             1         < eps
+    48 X48          NL             0             0             1         < eps
+    49 X49          NL             0             0             1         < eps
+    50 X50          NL             0             0             1         < eps
+    51 X51          NL             0             0             1         < eps
+    52 X52          NL             0             0             1         < eps
+    53 X53          NL             0             0             1         < eps
+    54 X54          NL             0             0             1         < eps
+    55 X55          NL             0             0             1         < eps
+    56 X56          NL             0             0             1         < eps
+    57 X57          NL             0             0             1         < eps
+    58 X58          NL             0             0             1         < eps
+    59 X59          NL             0             0             1         < eps
+    60 X60          NL             0             0             1         < eps
+    61 X61          NL             0             0             1         < eps
+    62 X62          NL             0             0             1         < eps
+    63 X63          NL             0             0             1         < eps
+    64 X64          NL             0             0             1         < eps
+    65 X65          NL             0             0             1         < eps
+    66 X66          NL             0             0             1         < eps
+    67 X67          NL             0             0             1         < eps
+    68 X68          NL             0             0             1         < eps
+    69 X69          NL             0             0             1         < eps
+    70 X70          NL             0             0             1         < eps
+    71 X71          NL             0             0             1         < eps
+    72 X72          NL             0             0             1         < eps
+    73 X73          NL             0             0             1         < eps
+    74 X74          NL             0             0             1         < eps
+    75 X75          NL             0             0             1         < eps
+    76 X76          NL             0             0             1         < eps
+    77 X77          NL             0             0             1         < eps
+    78 X78          NL             0             0             1         < eps
+    79 X79          NL             0             0             1         < eps
+    80 X80          NL             0             0             1         < eps
+    81 X81          NL             0             0             1         < eps
+    82 X82          NL             0             0             1         < eps
+    83 X83          NL             0             0             1         < eps
+    84 X84          NL             0             0             1         < eps
+    85 X85          NL             0             0             1         < eps
+    86 X86          NL             0             0             1         < eps
+    87 X87          NL             0             0             1         < eps
+    88 X88          NL             0             0             1         < eps
+    89 X89          NL             0             0             1         < eps
+    90 X90          NL             0             0             1         < eps
+    91 X91          NL             0             0             1         < eps
+    92 X92          NL             0             0             1         < eps
+    93 X93          NL             0             0             1         < eps
+    94 X94          NL             0             0             1         < eps
+    95 X95          NL             0             0             1         < eps
+    96 X96          NL             0             0             1         < eps
+    97 X97          NL             0             0             1         < eps
+    98 X98          NL             0             0             1         < eps
+    99 X99          NL             0             0             1         < eps
+   100 y1           NU             1             0             1             1 
+   101 y2           NU             1             0             1             1 
+   102 y3           NU             1             0             1             1 
+   103 y4           B              1             0             1 
+   104 y5           B              0             0             1 
+   105 y6           NU             1             0             1             1 
+   106 y7           B              1             0             1 
+   107 y8           NU             1             0             1             1 
+   108 y9           NU             1             0             1             1 
+   109 y10          B              1             0             1 
 
 Karush-Kuhn-Tucker optimality conditions:
 

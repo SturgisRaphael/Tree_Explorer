@@ -9,6 +9,9 @@
 #include "../glpk/glpk_interface.h"
 #include "../structures/Tupple.h"
 #include "../structures/Tripple.h"
+#include <vector>
+
+using namespace std;
 
 class LinearProgrammingSolver {
 private:
@@ -20,7 +23,7 @@ public:
 	glpk_interface &getLp();
 
 	AgentTreeExplorationSolution solver(AgentTreeExplorationInstance *atei);
-
+	AgentTreeExplorationSolution optiSolver(AgentTreeExplorationInstance *atei);
 	void initializeGlpk(int p, int m, int k);
 	static double** loadInstanceInMatrix(AgentTreeExplorationInstance *atei,
 	                                     vector<vector<Edge<int> *>> walks);
@@ -49,6 +52,12 @@ public:
 	AgentTreeExplorationSolution solver2(AgentTreeExplorationInstance *atei);
 
 	void printSolution();
+
+	bool isInWalks(vector<vector<Edge<int> *>> walks, vector<Edge<int> *> walk);
+
+	void printWalks(vector<vector<Edge<int> *>> vector);
+
+	void walkGenerator(vector<vector<Edge<int> *>> outputVector, Edge<int> * origin, vector<Edge<int> *>currentWalk, int battery, Tree<int> *tree);
 };
 
 template<class T>

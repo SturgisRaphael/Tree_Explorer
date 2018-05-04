@@ -225,7 +225,7 @@ TEST(LinearProgrammingSolver, makeBinaryTree) {
 	Tree<Tupple<int,double>> *binaryTree = solver.makeBinaryTree(tree, matrix);
 
 	Tree<Tupple<int, double>> *comp = new Tree<Tupple<int, double>>("root");
-	comp->addChildBin("1", 0, Tupple<int, double>(1, 0), Tupple<int, double>(0, 0));
+	comp->addChildBin("1", 0, Tupple<int, double>(1, 1), Tupple<int, double>(0, 0));
 	comp->addChildBin("2", 0, Tupple<int, double>(1, 1), Tupple<int, double>(0, 0));
 
 	ASSERT_EQ(*comp, *binaryTree);
@@ -250,7 +250,7 @@ TEST(LinearProgrammingSolver, makeBinaryTree2) {
 	Tree<Tupple<int,double>> *binaryTree = solver.makeBinaryTree(tree, matrix);
 
 	Tree<Tupple<int, double>> *comp = new Tree<Tupple<int, double>>("root");
-	comp->addChildBin("1", 0, Tupple<int, double>(1, 0), Tupple<int, double>(0, 0));
+	comp->addChildBin("1", 0, Tupple<int, double>(1, 1), Tupple<int, double>(0, 0));
 	comp->addChildBin("2", 1, Tupple<int, double>(1, 1), Tupple<int, double>(0, 0));
 	comp->addChildBin("3", 2, Tupple<int, double>(1, 1), Tupple<int, double>(0, 0));
 
@@ -287,7 +287,7 @@ TEST(LinearProgrammingSolver, PI_r) {
 	ASSERT_EQ(binaryTree->getPI_r()[1], 0);
 	ASSERT_EQ(binaryTree->getPI_r()[2], 1);
 	ASSERT_EQ(binaryTree->getPI_r()[3], 1);
-	ASSERT_EQ(binaryTree->getPI_r()[4], 1);
+	ASSERT_EQ(binaryTree->getPI_r()[4], 2);
 
 	Tupple<int, int> a = Tupple<int, int>(-1,-1);
 	Tupple<int, int> b = Tupple<int, int>(1,-1);
@@ -297,8 +297,8 @@ TEST(LinearProgrammingSolver, PI_r) {
 
 	ASSERT_EQ(binaryTree->getPI_r_origin()[0], a);
 	ASSERT_EQ(binaryTree->getPI_r_origin()[1], a);
-	ASSERT_EQ(binaryTree->getPI_r_origin()[2], b);
-	ASSERT_EQ(binaryTree->getPI_r_origin()[3], b);
+	ASSERT_EQ(binaryTree->getPI_r_origin()[2], c);
+	ASSERT_EQ(binaryTree->getPI_r_origin()[3], c);
 	ASSERT_EQ(binaryTree->getPI_r_origin()[4], c);
 
 	ASSERT_EQ(binaryTree->getPI_r_batterySplit()[0], a);
@@ -328,9 +328,9 @@ TEST(LinearProgrammingSolver, PI_f) {
 
 	ASSERT_EQ(binaryTree->getPI_f()[0], 0);
 	ASSERT_EQ(binaryTree->getPI_f()[1], 1);
-	ASSERT_EQ(binaryTree->getPI_f()[2], 1);
-	ASSERT_EQ(binaryTree->getPI_f()[3], 1);
-	ASSERT_EQ(binaryTree->getPI_f()[4], 2);
+	ASSERT_EQ(binaryTree->getPI_f()[2], 2);
+	ASSERT_EQ(binaryTree->getPI_f()[3], 2);
+	ASSERT_EQ(binaryTree->getPI_f()[4], 3);
 
 	Tupple<int, int> a = Tupple<int, int>(-1,-1);
 	Tupple<int, int> b = Tupple<int, int>(1,-1);
@@ -341,7 +341,7 @@ TEST(LinearProgrammingSolver, PI_f) {
 	Tupple<int, int> g = Tupple<int, int>(0, 1);
 
 	ASSERT_EQ(binaryTree->getPI_f_origin()[0], a);
-	ASSERT_EQ(binaryTree->getPI_f_origin()[1], b);
+	ASSERT_EQ(binaryTree->getPI_f_origin()[1], d);
 	ASSERT_EQ(binaryTree->getPI_f_origin()[2], d);
 	ASSERT_EQ(binaryTree->getPI_f_origin()[3], d);
 	ASSERT_EQ(binaryTree->getPI_f_origin()[4], c);
@@ -354,12 +354,12 @@ TEST(LinearProgrammingSolver, PI_f) {
 }
 
 TEST(LinearProgrammingSolver, findBestWalkId) {
-	Tree<int>* tree = new Tree<int>("root");
+	Tree<int> *tree = new Tree<int>("root");
 	tree->addChild("1");
 	tree->addChild("2");
 	tree->getChild("1")->addChild("1.1");
 
-	AgentTreeExplorationInstance* atei = new AgentTreeExplorationInstance
+	AgentTreeExplorationInstance *atei = new AgentTreeExplorationInstance
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
@@ -367,7 +367,7 @@ TEST(LinearProgrammingSolver, findBestWalkId) {
 
 	double *matrix = solver.extractBeta_i(3);
 
-	Tree<Tupple<int,double>> *binaryTree = solver.makeBinaryTree(tree, matrix);
+	Tree<Tupple<int, double>> *binaryTree = solver.makeBinaryTree(tree, matrix);
 
 	solver.tmpFunc(binaryTree, 4);
 
@@ -420,4 +420,130 @@ TEST(LinearProgrammingSolver, solver) {
 	solver.solver(atei);
 
 	delete atei;
+}
+
+TEST(Pi_f, NullTreeErrors) {
+	Tree<int> *tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->getChild("2")->addChild("2.1");
+	tree->getChild("2")->addChild("2.2");
+	tree->addChild("3");
+	tree->addChild("4");
+
+	AgentTreeExplorationInstance* atei = new AgentTreeExplorationInstance
+			(tree, 4, 4);
+
+	LinearProgrammingSolver solver = LinearProgrammingSolver();
+	solver.solver2(atei);
+
+	double *matrix = solver.extractBeta_i(tree->numberOfEdges());
+
+	Tree<Tupple<int,double>> *binaryTree = solver.makeBinaryTree(tree, matrix);
+
+	solver.tmpFunc(binaryTree, 4);
+
+	Tree<Tupple<int,double>> *problem = binaryTree->getChild(1);
+
+
+	ASSERT_EQ(problem->getPI_f()[2], 2);
+	ASSERT_EQ(problem->getPI_f_origin()[2].getA(), 1);
+	ASSERT_EQ(problem->getPI_f_origin()[2].getB(), -1);
+	ASSERT_EQ(problem->getPI_f_batterySplit()[2].getA(), 1);
+	ASSERT_EQ(problem->getPI_f_batterySplit()[2].getB(), -1);
+}
+
+TEST(solver, problem1) {
+	Tree<int> *tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->getChild("2")->addChild("2.1");
+	tree->getChild("2")->addChild("2.2");
+	tree->addChild("3");
+	tree->addChild("4");
+
+
+	AgentTreeExplorationInstance atei = AgentTreeExplorationInstance
+			(tree, 1, 3);
+
+	LinearProgrammingSolver solver = LinearProgrammingSolver();
+	solver.solver(&atei);
+
+	ASSERT_NE(solver.getLp().getColPrim(4), solver.getLp().getColPrim(5));
+}
+
+TEST(PI_f, problem1) {
+	Tree<int> *tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->getChild("2")->addChild("2.1");
+	tree->getChild("2")->addChild("2.2");
+	tree->addChild("3");
+	tree->addChild("4");
+
+
+	AgentTreeExplorationInstance atei = AgentTreeExplorationInstance
+			(tree, 1, 3);
+
+
+	LinearProgrammingSolver solver = LinearProgrammingSolver();
+	solver.solver2(&atei);
+
+	double *matrix = solver.extractBeta_i(3);
+
+	Tree<Tupple<int,double>> *binaryTree = solver.makeBinaryTree(tree, matrix);
+
+	solver.tmpFunc(binaryTree, 3);
+
+	ASSERT_EQ(binaryTree->getPI_f_origin()[0].getA(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_origin()[0].getB(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_origin()[1].getA(), 0);
+	ASSERT_EQ(binaryTree->getPI_f_origin()[1].getB(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_origin()[2].getA(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_origin()[2].getB(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_origin()[3].getA(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_origin()[3].getB(), -1);
+
+	ASSERT_EQ(binaryTree->getPI_f_batterySplit()[0].getA(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_batterySplit()[0].getB(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_batterySplit()[1].getA(), 1);
+	ASSERT_EQ(binaryTree->getPI_f_batterySplit()[1].getB(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_batterySplit()[2].getA(), 2);
+	ASSERT_EQ(binaryTree->getPI_f_batterySplit()[2].getB(), -1);
+	ASSERT_EQ(binaryTree->getPI_f_batterySplit()[3].getA(), 3);
+	ASSERT_EQ(binaryTree->getPI_f_batterySplit()[3].getB(), -1);
+}
+
+TEST(solver, problem2) {
+	Tree<int> *tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->getChild("2")->addChild("2.1");
+	tree->getChild("2")->addChild("2.2");
+	tree->addChild("3");
+	tree->addChild("4");
+
+	AgentTreeExplorationInstance atei = AgentTreeExplorationInstance
+			(tree, 1, 4);
+
+	LinearProgrammingSolver solver = LinearProgrammingSolver();
+	solver.solver(&atei);
+}
+
+TEST(optimalSolver, generateWalks) {
+	Tree<int> *tree = new Tree<int>("root");
+	tree->addChild("1");
+	tree->addChild("2");
+	tree->getChild("2")->addChild("2.1");
+	tree->getChild("2")->addChild("2.2");
+	tree->addChild("3");
+	tree->addChild("4");
+
+	LinearProgrammingSolver solver = LinearProgrammingSolver();
+	vector<vector<Edge<int>*>> outputVector;
+
+	vector<Edge<int> *> emptyVector;
+	solver.walkGenerator(outputVector, nullptr, emptyVector, 3, tree);
+
+	ASSERT_EQ(outputVector.size(), 10);
 }

@@ -74,6 +74,13 @@ public:
 		return !(rhs == *this);
 	}
 
+	int getIndexOfEdge(int id){
+		for(int i = 0; i < edges.size(); i++)
+			if(edges[i]->getId() == id)
+				return i;
+		return -1;
+	}
+
 	friend ostream &operator<<(ostream &os, const Tree &tree) {
 		Edge<T>* tmp = tree.getEdgeToParent();
 

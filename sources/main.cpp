@@ -9,6 +9,7 @@
 
 int main(int argc, char* argv[])
 {
+/*
 	Tree<int> *tree = new Tree<int>("root");
 	tree->addChild("1");
 	tree->addChild("2");
@@ -17,18 +18,19 @@ int main(int argc, char* argv[])
 	tree->addChild("3");
 	tree->addChild("4");
 
+
 	AgentTreeExplorationInstance atei = AgentTreeExplorationInstance
-			(tree, 4, 4);
+			(tree, 2, 4);
+*/
+
+	AgentTreeExplorationInstance atei = FileManager::readInstanceFromFile("../data/testFiles/test1.2.txt");
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
 	solver.solver(&atei);
 
-	solver.printSolution();
-
 	solver.getLp().writeMPS("mps.txt");
 	solver.getLp().writeSol("sol.txt");
 	solver.getLp().printSol("print.txt");
-
 
 	return 0;
 }

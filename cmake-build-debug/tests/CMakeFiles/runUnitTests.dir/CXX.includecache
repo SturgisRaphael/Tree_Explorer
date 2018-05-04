@@ -284,41 +284,43 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/zampieri/Raphael/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
 ../structures/AgentTreeExplorationSolution.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
 ../glpk/glpk_interface.h
-/home/zampieri/Raphael/Tree_Explorer/sources/glpk/glpk_interface.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
 ../structures/Tupple.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tupple.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
 ../structures/Tripple.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tripple.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tripple.h
+vector
+-
 
-/home/zampieri/Raphael/Tree_Explorer/sources/glpk/glpk_interface.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
 glpk.h
 -
 string
 -
 
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
 ostream
 -
 ../structures/Tree.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
 
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
 vector
 -
 ostream
 -
 AgentTreeExplorationInstance.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
 
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Edge.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h
 Tree.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
 
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
 string
 -
 vector
@@ -326,61 +328,61 @@ vector
 ostream
 -
 Edge.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Edge.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h
 Tupple.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tupple.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
 
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tripple.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tripple.h
 ostream
 -
 
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tupple.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
 ostream
 -
 
-/home/zampieri/Raphael/Tree_Explorer/sources/utils/FileManager.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.h
 ../structures/AgentTreeExplorationInstance.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
 ../structures/AgentTreeExplorationSolution.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
 
-/home/zampieri/Raphael/Tree_Explorer/tests/Algorithms/LinearProgrammingSolver_test.cpp
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/Algorithms/LinearProgrammingSolver_test.cpp
 gtest/gtest.h
 -
 malloc.h
 -
 ../../sources/structures/Tree.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
 ../../sources/structures/AgentTreeExplorationInstance.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
 ../../sources/algortihms/LinearProgrammingSolver.h
-/home/zampieri/Raphael/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
 ../../sources/structures/Tupple.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tupple.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
 
-/home/zampieri/Raphael/Tree_Explorer/tests/glpk/glpk_interface_test.cpp
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/glpk/glpk_interface_test.cpp
 gtest/gtest.h
 -
 glpk.h
 -
 ../../sources/glpk/glpk_interface.h
-/home/zampieri/Raphael/Tree_Explorer/sources/glpk/glpk_interface.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
 
-/home/zampieri/Raphael/Tree_Explorer/tests/gtest.cpp
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/gtest.cpp
 gtest/gtest.h
 -
 
-/home/zampieri/Raphael/Tree_Explorer/tests/structures/Tree_test.cpp
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/structures/Tree_test.cpp
 gtest/gtest.h
 -
 ../../sources/structures/Tree.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
 
-/home/zampieri/Raphael/Tree_Explorer/tests/utils/FileManager_test.cpp
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/utils/FileManager_test.cpp
 gtest/gtest.h
 -
 ../../sources/structures/AgentTreeExplorationInstance.h
-/home/zampieri/Raphael/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
 ../../sources/utils/FileManager.h
-/home/zampieri/Raphael/Tree_Explorer/sources/utils/FileManager.h
+/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.h
 

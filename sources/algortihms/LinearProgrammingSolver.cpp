@@ -11,7 +11,7 @@
 
 
 
-AgentTreeExplorationSolution
+vector<vector<Edge<int> *>>
 LinearProgrammingSolver::solver(AgentTreeExplorationInstance *atei) {
 
 	vector<vector<Edge<int> *>> walks;
@@ -75,7 +75,7 @@ LinearProgrammingSolver::solver(AgentTreeExplorationInstance *atei) {
 
 	glp_print_sol(lp.getRoot(), "test.txt");
 
-	return AgentTreeExplorationSolution();
+	return walks;
 }
 /*
 AgentTreeExplorationSolution
@@ -608,15 +608,7 @@ AgentTreeExplorationSolution LinearProgrammingSolver::optiSolver(AgentTreeExplor
 
 	walkGenerator(&walks, nullptr, tmp, atei->getStartingBattery(), atei->getTree());
 
-	int p = static_cast<int>(walks.size()), m = atei->getTree()
-			->numberOfEdges();
-
-	initializeGlpk(p, m, atei->getNumberOfAgents());
-
-	loadInstanceInGlpk(atei, walks);
-
-	lp.simplex(nullptr);
-
+	integerSolver(atei, walks);
 
 	printSolution();
 
@@ -625,5 +617,66 @@ AgentTreeExplorationSolution LinearProgrammingSolver::optiSolver(AgentTreeExplor
 	return AgentTreeExplorationSolution();
 }
 
+void LinearProgrammingSolver::initializeGlpkInteger(int p, int m, int agents) {
+	lp = glpk_interface();
 
+	this->p = p;
+	this->m = m;
 
+	lp.createProblem();
+	lp.setProbName("atei");
+	lp.setObjDir(glpk_interface::max);
+
+	lp.addRows((m * 2) + 1);
+
+	lp.setRowName(1, "alpha");
+	lp.setRowBnds(1, glpk_interface::upper, 0.0, agents);
+
+	for(int i = 1; i <= m; i++)
+	{
+		string str = "beta" + to_string(i);
+		lp.setRowName(1 + i, str.c_str());
+		lp.setRowBnds(1 + i, glpk_interface::upper, 0.0, 0.0);
+	}
+
+	for(int i = 1; i <= m; i++)
+	{
+		string str = "gamma" + to_string(i);
+		lp.setRowName(1 + m + i, str.c_str());
+		lp.setRowBnds(1 + m + i, glpk_interface::upper, 0.0, 1.0);
+	}
+
+	lp.addCols(m + p);
+
+	for(int i = 1; i <= p; i++){
+		string str = "X" + to_string(i);
+		lp.setColName(i, str.c_str());
+		lp.setColBnds(i, glpk_interface::double_bound, 0.0, 1.0);
+		lp.setColKind(i, GLP_IV);
+		lp.setObjCoef(i, 0.0);
+	}
+
+	for(int i = p + 1; i <= m + p; i++){
+		string str = "y" + to_string(i - p);
+		lp.setColName(i, str.c_str());
+		lp.setColBnds(i, glpk_interface::double_bound, 0.0, 1.0);
+		lp.setColKind(i, GLP_IV);
+		lp.setObjCoef(i, 1.0);
+	}
+
+}
+
+void LinearProgrammingSolver::integerSolver(AgentTreeExplorationInstance *atei, vector<vector<Edge<int>*>> walks) {
+	int p = static_cast<int>(walks.size()), m = atei->getTree()->numberOfEdges();
+
+	initializeGlpkInteger(p, m, atei->getNumberOfAgents());
+
+	loadInstanceInGlpk(atei, walks);
+
+	lp.simplex(nullptr);
+	lp.int_opt(nullptr);
+
+	printSolution();
+
+	printWalks(walks);
+}

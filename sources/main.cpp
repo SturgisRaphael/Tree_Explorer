@@ -12,7 +12,7 @@
 
 int main(int argc, char* argv[])
 {
-	/*
+
 	int index = 0;
 	Tree<int> *tree = new Tree<int>(&index, "root");
 	tree->addChild("1");
@@ -23,22 +23,25 @@ int main(int argc, char* argv[])
 	tree->addChild("4");
 
 
-	AgentTreeExplorationInstance atei = AgentTreeExplorationInstance
-			(tree, 2, 4);
+	//AgentTreeExplorationInstance atei = AgentTreeExplorationInstance(tree, 2, 4);
 
-	//AgentTreeExplorationInstance atei = FileManager::readInstanceFromFile("../data/testFiles/test1.2.txt");
+	AgentTreeExplorationInstance atei = FileManager::readInstanceFromFile("../data/binaryTrees/tree170.txt");
 
 	cout << "Linear Program:" << endl;
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver(&atei);
+	vector<vector<Edge<int> *>> walks = solver.solver(&atei);
 
-	cout << "Optimal:" << endl;
+	cout << endl << "Integer Linear Program On Generated Walks:" << endl;
+
+	solver.integerSolver(&atei, walks);
+
+	cout << endl << "Optimal:" << endl;
 
 	solver.optiSolver(&atei);
 
-	*/
 
+/*
 	vector<Tree<int>*> vector = TreeGenerator::generateBinaryTrees(3);
 
 	unsigned long treeNumber = vector.size();
@@ -53,6 +56,6 @@ int main(int argc, char* argv[])
 		FileManager::writeInstanceToFile(s, &atei);
 		treeNumber--;
 	}
-
+*/
 	return 0;
 }

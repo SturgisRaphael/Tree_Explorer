@@ -114,4 +114,12 @@ void glpk_interface::housekeeping() {
 	freeEnv();
 }
 
+void glpk_interface::int_opt(const glp_iocp *ptr) {
+	glp_intopt(root, ptr);
+}
+
+void glpk_interface::setColKind(int index, int kind) {
+	glp_set_col_kind(root, index, kind);
+}
+
 

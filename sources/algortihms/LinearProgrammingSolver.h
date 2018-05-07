@@ -22,8 +22,9 @@ private:
 public:
 	glpk_interface &getLp();
 
-	AgentTreeExplorationSolution solver(AgentTreeExplorationInstance *atei);
+	vector<vector<Edge<int> *>> solver(AgentTreeExplorationInstance *atei);
 	AgentTreeExplorationSolution optiSolver(AgentTreeExplorationInstance *atei);
+	void integerSolver(AgentTreeExplorationInstance *atei, vector<vector<Edge<int> *>> walks);
 	void initializeGlpk(int p, int m, int k);
 	static double** loadInstanceInMatrix(AgentTreeExplorationInstance *atei,
 	                                     vector<vector<Edge<int> *>> walks);
@@ -60,6 +61,8 @@ public:
 	void walkGenerator(vector<vector<Edge<int> *>> *outputVector, Edge<int> * origin, vector<Edge<int> *>currentWalk, int battery, Tree<int> *tree);
 
 	void printWalk(vector<Edge<int> *> vector);
+
+	void initializeGlpkInteger(int p, int m, int agents);
 };
 
 template<class T>

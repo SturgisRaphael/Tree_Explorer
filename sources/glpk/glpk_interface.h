@@ -36,10 +36,12 @@ public:
 	void addCols(int numberRows);
 	void setColName(int index, const char *str);
 	void setColBnds(int index, glp_var_dir dir, double lbnds, double ubnds);
+	void setColKind(int index, int kind);
 
 	void loadMatrix(int size, const int *ia, const int *ja, const double *ar);
 
 	void simplex(const glp_smcp *ptr);
+	void int_opt(const glp_iocp *ptr);
 
 	double getObjVal();
 	double getColPrim(int index);

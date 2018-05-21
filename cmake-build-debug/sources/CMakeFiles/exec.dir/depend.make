@@ -3,6 +3,7 @@
 
 sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/algortihms/LinearProgrammingSolver.h
 sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/algortihms/TreeGenerator.h
+sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/algortihms/instanceGenrator.h
 sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/glpk/glpk_interface.h
 sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/legacy/BinaryTree.h
 sources/CMakeFiles/exec.dir/main.cpp.o: ../sources/legacy/Tree.h

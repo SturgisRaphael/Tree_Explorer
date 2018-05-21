@@ -21,6 +21,16 @@ sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/structure
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/structures/Tree.h
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/structures/Tupple.h
 
+sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/algortihms/TreeGenerator.h
+sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/algortihms/instanceGenrator.cpp
+sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/algortihms/instanceGenrator.h
+sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/legacy/BinaryTree.h
+sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/legacy/Tree.h
+sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/structures/AgentTreeExplorationInstance.h
+sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/structures/Edge.h
+sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/structures/Tree.h
+sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/structures/Tupple.h
+
 sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o: ../sources/glpk/glpk_interface.cpp
 sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o: ../sources/glpk/glpk_interface.h
 

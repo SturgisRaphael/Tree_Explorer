@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/zampieri/Raphael/Tree_Explorer/tests
-BuildDirectory: /home/zampieri/Raphael/Tree_Explorer/cmake-build-debug/tests
+SourceDirectory: /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests
+BuildDirectory: /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/tests
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: zampieri-nicolas
+Site: raphael-laptop
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++
@@ -36,8 +36,8 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/home/zampieri/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake" "/home/zampieri/Raphael/Tree_Explorer/tests"
-MakeCommand: /home/zampieri/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake" "/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests"
+MakeCommand: /home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -73,7 +73,7 @@ UpdateType:
 
 # Compiler info
 Compiler: /usr/bin/c++
-CompilerVersion: 5.4.0
+CompilerVersion: 6.3.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

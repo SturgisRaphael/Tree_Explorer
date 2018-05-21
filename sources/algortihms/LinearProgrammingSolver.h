@@ -24,6 +24,7 @@ public:
 
 	vector<vector<Edge<int> *>> solver(AgentTreeExplorationInstance *atei);
 	AgentTreeExplorationSolution optiSolver(AgentTreeExplorationInstance *atei);
+	AgentTreeExplorationSolution optiFracSolver(AgentTreeExplorationInstance *atei);
 	void integerSolver(AgentTreeExplorationInstance *atei, vector<vector<Edge<int> *>> walks);
 	void initializeGlpk(int p, int m, int k);
 	static double** loadInstanceInMatrix(AgentTreeExplorationInstance *atei,
@@ -53,6 +54,7 @@ public:
 	AgentTreeExplorationSolution solver2(AgentTreeExplorationInstance *atei);
 
 	void printSolution();
+	void printIntegerSolution();
 
 	bool isInWalks(vector<vector<Edge<int> *>> walks, vector<Edge<int> *> walk);
 

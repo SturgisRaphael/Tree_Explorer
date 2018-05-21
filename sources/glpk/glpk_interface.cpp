@@ -122,4 +122,12 @@ void glpk_interface::setColKind(int index, int kind) {
 	glp_set_col_kind(root, index, kind);
 }
 
+double glpk_interface::mipObjValue() {
+	return glp_mip_obj_val(root);
+}
+
+double glpk_interface::mipColValue(int index) {
+	return glp_mip_col_val(root, index);
+}
+
 

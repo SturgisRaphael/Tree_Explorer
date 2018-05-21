@@ -59,6 +59,9 @@ public:
 
 	void housekeeping();
 
+	double mipObjValue();
+	double mipColValue(int index);
+
 	virtual ~glpk_interface();
 };
 

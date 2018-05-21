@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o"
   "CMakeFiles/core.dir/glpk/glpk_interface.cpp.o"
   "CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o"
+  "CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o"
   "libcore.pdb"
   "libcore.a"
 )

@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include <queue>
+#include <sstream>
+#include <vector>
 #include "TreeGenerator.h"
 
 vector<Tree<int>*> TreeGenerator::generateBinaryTrees(int depth) {
@@ -69,31 +71,47 @@ bool TreeGenerator::isInList(Tree<int> *&pTree, vector<Tree<int> *> vector) {
 	return false;
 }
 
-/*
-void TreeGenerator::generateBinaryTrees(int depth, vector<Tree<int>*> *vector, Tree<int> *currentTree) {
-	bool add = true;
-	for(auto T: vector[0])
-		if(T == currentTree->getRoot())
-			add = false;
-	if(add)
+Tree<int>* TreeGenerator::generate3PartitionTree(vector<int> values) {
+	int index = 0;
+	Tree<int>* result =  new Tree<int>(&index, "root");
+
+
+	int k = static_cast<int>(values.size() / 3);
+
+	if(k <= 0)
 	{
-		vector->push_back(currentTree->getRoot());
-		cout << *currentTree->getRoot() << endl;
+		cerr << "error : k = " << k << endl;
+		return result;
 	}
-	if(depth > 0)
+
+	int S = 0;
+	int i = 1;
+	for(int v: values)
+		S+=v;
+	for(int v: values)
 	{
-		int index1 = *currentTree->index;
-		Tree<int> *copy1 = currentTree->getRoot()->copy(&index1);
-		copy1 = copy1->findChild(currentTree->getLabel());
-		Tree<int> *child1 = copy1->addChild(std::to_string(*copy1->index));
+		addBranch(v, result, i);
+		i++;
+	}
+	for(int j = 0; j < k; j++)
+	{
+		addBranch(S / k, result, i + j);
+	}
 
-		int index2 = *copy1->index;
-		Tree<int> *copy2 = copy1->getRoot()->copy(&index2);
-		copy2 = copy2->findChild(copy1->getLabel());
-		Tree<int> *child2 = copy2->addChild(std::to_string(*copy2->index));
+	return result;
+}
 
-		generateBinaryTrees(depth - 1, vector, child1);
-		generateBinaryTrees(depth - 1, vector, child2);
+void TreeGenerator::addBranch(int k, Tree<int> *tree, int index) {
+	Tree<int> *currentNode = tree;
+	for(int i = 0; i < k; i++)
+	{
+		std::stringstream ss;
+		if(i == 0)
+			ss << index;
+		else
+			ss << currentNode->getLabel() << ".1";
+
+		std::string s = ss.str();
+		currentNode = currentNode->addChild(s);
 	}
 }
-*/

@@ -6,87 +6,79 @@
 
 #IncludeRegexTransform: 
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
 ../structures/AgentTreeExplorationSolution.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
 ../glpk/glpk_interface.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
 ../structures/Tupple.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tupple.h
 ../structures/Tripple.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tripple.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tripple.h
 vector
 -
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.h
 ../structures/Tree.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tree.h
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/gloutonSolver.h
+../structures/AgentTreeExplorationSolution.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+LinearProgrammingSolver.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
+
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.h
 ../structures/AgentTreeExplorationInstance.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/glpk/glpk_interface.h
 glpk.h
 -
 string
 -
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/legacy/BinaryTree.h
-ostream
--
-Tree.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/legacy/Tree.h
-string
--
-
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/legacy/Tree.h
-string
--
-vector
--
-ostream
--
-Edge.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/legacy/Edge.h
-BinaryTree.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/legacy/BinaryTree.h
-
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/main.cpp
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/main.cpp
 iostream
 -
 sstream
 -
 string
 -
+cmath
+-
 algortihms/LinearProgrammingSolver.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.h
 utils/FileManager.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/FileManager.h
 algortihms/TreeGenerator.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.h
 algortihms/instanceGenrator.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.h
+utils/Tui.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/Tui.h
+algortihms/gloutonSolver.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/gloutonSolver.h
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
 ostream
 -
 ../structures/Tree.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tree.h
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
 vector
 -
 ostream
 -
 AgentTreeExplorationInstance.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Edge.h
 Tree.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tree.h
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tree.h
 string
 -
 vector
@@ -94,25 +86,31 @@ vector
 ostream
 -
 Edge.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Edge.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Edge.h
 Tupple.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
-../legacy/Tree.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/legacy/Tree.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tupple.h
 Tree.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tree.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tree.h
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tripple.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tripple.h
 ostream
 -
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/Tupple.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tupple.h
 ostream
 -
 
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/FileManager.h
 ../structures/AgentTreeExplorationInstance.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
 ../structures/AgentTreeExplorationSolution.h
-/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationSolution.h
+
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/Tui.h
+../structures/Tree.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/Tree.h
+../structures/AgentTreeExplorationInstance.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/structures/AgentTreeExplorationInstance.h
+../algortihms/TreeGenerator.h
+/home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.h
 

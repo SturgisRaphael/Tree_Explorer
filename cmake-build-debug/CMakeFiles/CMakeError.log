@@ -1,24 +1,242 @@
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
 
-Run Build Command:"/usr/bin/make" "cmTC_87e40/fast"
-/usr/bin/make -f CMakeFiles/cmTC_87e40.dir/build.make CMakeFiles/cmTC_87e40.dir/build
-make[1]: Entering directory '/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_87e40.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_87e40.dir/CheckSymbolExists.c.o   -c /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_87e40
-/home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87e40.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_87e40.dir/CheckSymbolExists.c.o  -o cmTC_87e40 
-CMakeFiles/cmTC_87e40.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+The output was:
+1
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: cannot find crtn.o: No such file or directory
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_87e40.dir/build.make:97: recipe for target 'cmTC_87e40' failed
-make[1]: *** [cmTC_87e40] Error 1
-make[1]: Leaving directory '/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_87e40/fast' failed
-make: *** [cmTC_87e40/fast] Error 2
 
-File /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1759c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1759c.dir/build.make CMakeFiles/cmTC_1759c.dir/build
+make[1]: Entering directory '/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1759c.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1759c.dir/testCCompiler.c.o   -c /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_1759c
+/home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1759c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_1759c.dir/testCCompiler.c.o  -o cmTC_1759c 
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1759c.dir/build.make:97: recipe for target 'cmTC_1759c' failed
+make[1]: *** [cmTC_1759c] Error 1
+make[1]: Leaving directory '/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1759c/fast' failed
+make: *** [cmTC_1759c/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c9c2b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c9c2b.dir/build.make CMakeFiles/cmTC_c9c2b.dir/build
+make[1]: Entering directory '/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c9c2b.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c9c2b.dir/testCCompiler.c.o   -c /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_c9c2b
+/home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9c2b.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_c9c2b.dir/testCCompiler.c.o  -o cmTC_c9c2b 
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c9c2b.dir/build.make:97: recipe for target 'cmTC_c9c2b' failed
+make[1]: *** [cmTC_c9c2b] Error 1
+make[1]: Leaving directory '/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c9c2b/fast' failed
+make: *** [cmTC_c9c2b/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ec9be/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ec9be.dir/build.make CMakeFiles/cmTC_ec9be.dir/build
+make[1]: Entering directory '/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ec9be.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ec9be.dir/CheckSymbolExists.c.o   -c /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ec9be
+/home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec9be.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ec9be.dir/CheckSymbolExists.c.o  -o cmTC_ec9be 
+CMakeFiles/cmTC_ec9be.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ec9be.dir/build.make:97: recipe for target 'cmTC_ec9be' failed
+make[1]: *** [cmTC_ec9be] Error 1
+make[1]: Leaving directory '/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ec9be/fast' failed
+make: *** [cmTC_ec9be/fast] Error 2
+
+File /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 

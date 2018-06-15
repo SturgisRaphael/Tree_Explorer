@@ -43,10 +43,10 @@ RM = /home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raphael/Master-informatique/M1/Stage/Tree_Explorer
+CMAKE_SOURCE_DIR = /home/raphael/University/Master-1/Stage/Tree_Explorer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug
+CMAKE_BINARY_DIR = /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include sources/CMakeFiles/core.dir/depend.make
@@ -59,16 +59,16 @@ include sources/CMakeFiles/core.dir/flags.make
 
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: sources/CMakeFiles/core.dir/flags.make
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/utils/FileManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sources/CMakeFiles/core.dir/utils/FileManager.cpp.o"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/utils/FileManager.cpp.o -c /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sources/CMakeFiles/core.dir/utils/FileManager.cpp.o"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/utils/FileManager.cpp.o -c /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/FileManager.cpp
 
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/utils/FileManager.cpp.i"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.cpp > CMakeFiles/core.dir/utils/FileManager.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/FileManager.cpp > CMakeFiles/core.dir/utils/FileManager.cpp.i
 
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/utils/FileManager.cpp.s"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/utils/FileManager.cpp -o CMakeFiles/core.dir/utils/FileManager.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/FileManager.cpp -o CMakeFiles/core.dir/utils/FileManager.cpp.s
 
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o.requires:
 
@@ -83,16 +83,16 @@ sources/CMakeFiles/core.dir/utils/FileManager.cpp.o.provides.build: sources/CMak
 
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: sources/CMakeFiles/core.dir/flags.make
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources/algortihms/LinearProgrammingSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o -c /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o -c /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.cpp
 
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.i"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.cpp > CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.cpp > CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.i
 
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.s"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.cpp -o CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/LinearProgrammingSolver.cpp -o CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.s
 
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o.requires:
 
@@ -107,16 +107,16 @@ sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o.provides.bu
 
 sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o: sources/CMakeFiles/core.dir/flags.make
 sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o: ../sources/glpk/glpk_interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/glpk/glpk_interface.cpp.o -c /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/glpk/glpk_interface.cpp.o -c /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/glpk/glpk_interface.cpp
 
 sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/glpk/glpk_interface.cpp.i"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.cpp > CMakeFiles/core.dir/glpk/glpk_interface.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/glpk/glpk_interface.cpp > CMakeFiles/core.dir/glpk/glpk_interface.cpp.i
 
 sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/glpk/glpk_interface.cpp.s"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/glpk/glpk_interface.cpp -o CMakeFiles/core.dir/glpk/glpk_interface.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/glpk/glpk_interface.cpp -o CMakeFiles/core.dir/glpk/glpk_interface.cpp.s
 
 sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o.requires:
 
@@ -131,16 +131,16 @@ sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o.provides.build: sources/CM
 
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: sources/CMakeFiles/core.dir/flags.make
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/algortihms/TreeGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o -c /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o -c /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.cpp
 
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.i"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.cpp > CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.cpp > CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.i
 
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.s"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.cpp -o CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/TreeGenerator.cpp -o CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.s
 
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o.requires:
 
@@ -155,16 +155,16 @@ sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o.provides.build: sourc
 
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: sources/CMakeFiles/core.dir/flags.make
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/algortihms/instanceGenrator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o -c /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o -c /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.cpp
 
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.i"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.cpp > CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.cpp > CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.i
 
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.s"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.cpp -o CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/instanceGenrator.cpp -o CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.s
 
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o.requires:
 
@@ -177,13 +177,63 @@ sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o.provides: sources/
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o.provides.build: sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o
 
 
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: sources/CMakeFiles/core.dir/flags.make
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/algortihms/gloutonSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o -c /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/gloutonSolver.cpp
+
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.i"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/gloutonSolver.cpp > CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.i
+
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.s"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/algortihms/gloutonSolver.cpp -o CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.s
+
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o.requires:
+
+.PHONY : sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o.requires
+
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o.provides: sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o.requires
+	$(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o.provides.build
+.PHONY : sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o.provides
+
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o.provides.build: sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o
+
+
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: sources/CMakeFiles/core.dir/flags.make
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/utils/Tui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sources/CMakeFiles/core.dir/utils/Tui.cpp.o"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/core.dir/utils/Tui.cpp.o -c /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/Tui.cpp
+
+sources/CMakeFiles/core.dir/utils/Tui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/utils/Tui.cpp.i"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/Tui.cpp > CMakeFiles/core.dir/utils/Tui.cpp.i
+
+sources/CMakeFiles/core.dir/utils/Tui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/utils/Tui.cpp.s"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/raphael/University/Master-1/Stage/Tree_Explorer/sources/utils/Tui.cpp -o CMakeFiles/core.dir/utils/Tui.cpp.s
+
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o.requires:
+
+.PHONY : sources/CMakeFiles/core.dir/utils/Tui.cpp.o.requires
+
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o.provides: sources/CMakeFiles/core.dir/utils/Tui.cpp.o.requires
+	$(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/Tui.cpp.o.provides.build
+.PHONY : sources/CMakeFiles/core.dir/utils/Tui.cpp.o.provides
+
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o.provides.build: sources/CMakeFiles/core.dir/utils/Tui.cpp.o
+
+
 # Object files for target core
 core_OBJECTS = \
 "CMakeFiles/core.dir/utils/FileManager.cpp.o" \
 "CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o" \
 "CMakeFiles/core.dir/glpk/glpk_interface.cpp.o" \
 "CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o" \
-"CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o"
+"CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o" \
+"CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o" \
+"CMakeFiles/core.dir/utils/Tui.cpp.o"
 
 # External object files for target core
 core_EXTERNAL_OBJECTS =
@@ -193,11 +243,13 @@ sources/libcore.a: sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolve
 sources/libcore.a: sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o
 sources/libcore.a: sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o
 sources/libcore.a: sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o
+sources/libcore.a: sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o
+sources/libcore.a: sources/CMakeFiles/core.dir/utils/Tui.cpp.o
 sources/libcore.a: sources/CMakeFiles/core.dir/build.make
 sources/libcore.a: sources/CMakeFiles/core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libcore.a"
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && $(CMAKE_COMMAND) -P CMakeFiles/core.dir/cmake_clean_target.cmake
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libcore.a"
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && $(CMAKE_COMMAND) -P CMakeFiles/core.dir/cmake_clean_target.cmake
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sources/CMakeFiles/core.dir/build: sources/libcore.a
@@ -209,14 +261,16 @@ sources/CMakeFiles/core.dir/requires: sources/CMakeFiles/core.dir/algortihms/Lin
 sources/CMakeFiles/core.dir/requires: sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o.requires
 sources/CMakeFiles/core.dir/requires: sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o.requires
 sources/CMakeFiles/core.dir/requires: sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o.requires
+sources/CMakeFiles/core.dir/requires: sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o.requires
+sources/CMakeFiles/core.dir/requires: sources/CMakeFiles/core.dir/utils/Tui.cpp.o.requires
 
 .PHONY : sources/CMakeFiles/core.dir/requires
 
 sources/CMakeFiles/core.dir/clean:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources && $(CMAKE_COMMAND) -P CMakeFiles/core.dir/cmake_clean.cmake
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources && $(CMAKE_COMMAND) -P CMakeFiles/core.dir/cmake_clean.cmake
 .PHONY : sources/CMakeFiles/core.dir/clean
 
 sources/CMakeFiles/core.dir/depend:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raphael/Master-informatique/M1/Stage/Tree_Explorer /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources/CMakeFiles/core.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raphael/University/Master-1/Stage/Tree_Explorer /home/raphael/University/Master-1/Stage/Tree_Explorer/sources /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources/CMakeFiles/core.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sources/CMakeFiles/core.dir/depend
 

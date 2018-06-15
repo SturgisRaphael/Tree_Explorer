@@ -48,10 +48,10 @@ RM = /home/raphael/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raphael/Master-informatique/M1/Stage/Tree_Explorer
+CMAKE_SOURCE_DIR = /home/raphael/University/Master-1/Stage/Tree_Explorer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug
+CMAKE_BINARY_DIR = /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/sources/CMakeFiles/progress.marks
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles 0
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/sources/CMakeFiles/progress.marks
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/clean
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/preinstall
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/preinstall
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sources/CMakeFiles/core.dir/rule:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/CMakeFiles/core.dir/rule
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/CMakeFiles/core.dir/rule
 .PHONY : sources/CMakeFiles/core.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ core: sources/CMakeFiles/core.dir/rule
 
 # fast build rule for target.
 core/fast:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/build
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/build
 .PHONY : core/fast
 
 # Convenience name for target.
 sources/CMakeFiles/exec.dir/rule:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/CMakeFiles/exec.dir/rule
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 sources/CMakeFiles/exec.dir/rule
 .PHONY : sources/CMakeFiles/exec.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ exec: sources/CMakeFiles/exec.dir/rule
 
 # fast build rule for target.
 exec/fast:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/exec.dir/build.make sources/CMakeFiles/exec.dir/build
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/exec.dir/build.make sources/CMakeFiles/exec.dir/build
 .PHONY : exec/fast
 
 algortihms/LinearProgrammingSolver.o: algortihms/LinearProgrammingSolver.cpp.o
@@ -192,7 +192,7 @@ algortihms/LinearProgrammingSolver.o: algortihms/LinearProgrammingSolver.cpp.o
 
 # target to build an object file
 algortihms/LinearProgrammingSolver.cpp.o:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o
 .PHONY : algortihms/LinearProgrammingSolver.cpp.o
 
 algortihms/LinearProgrammingSolver.i: algortihms/LinearProgrammingSolver.cpp.i
@@ -201,7 +201,7 @@ algortihms/LinearProgrammingSolver.i: algortihms/LinearProgrammingSolver.cpp.i
 
 # target to preprocess a source file
 algortihms/LinearProgrammingSolver.cpp.i:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.i
 .PHONY : algortihms/LinearProgrammingSolver.cpp.i
 
 algortihms/LinearProgrammingSolver.s: algortihms/LinearProgrammingSolver.cpp.s
@@ -210,7 +210,7 @@ algortihms/LinearProgrammingSolver.s: algortihms/LinearProgrammingSolver.cpp.s
 
 # target to generate assembly for a file
 algortihms/LinearProgrammingSolver.cpp.s:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.s
 .PHONY : algortihms/LinearProgrammingSolver.cpp.s
 
 algortihms/TreeGenerator.o: algortihms/TreeGenerator.cpp.o
@@ -219,7 +219,7 @@ algortihms/TreeGenerator.o: algortihms/TreeGenerator.cpp.o
 
 # target to build an object file
 algortihms/TreeGenerator.cpp.o:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o
 .PHONY : algortihms/TreeGenerator.cpp.o
 
 algortihms/TreeGenerator.i: algortihms/TreeGenerator.cpp.i
@@ -228,7 +228,7 @@ algortihms/TreeGenerator.i: algortihms/TreeGenerator.cpp.i
 
 # target to preprocess a source file
 algortihms/TreeGenerator.cpp.i:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.i
 .PHONY : algortihms/TreeGenerator.cpp.i
 
 algortihms/TreeGenerator.s: algortihms/TreeGenerator.cpp.s
@@ -237,8 +237,35 @@ algortihms/TreeGenerator.s: algortihms/TreeGenerator.cpp.s
 
 # target to generate assembly for a file
 algortihms/TreeGenerator.cpp.s:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.s
 .PHONY : algortihms/TreeGenerator.cpp.s
+
+algortihms/gloutonSolver.o: algortihms/gloutonSolver.cpp.o
+
+.PHONY : algortihms/gloutonSolver.o
+
+# target to build an object file
+algortihms/gloutonSolver.cpp.o:
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o
+.PHONY : algortihms/gloutonSolver.cpp.o
+
+algortihms/gloutonSolver.i: algortihms/gloutonSolver.cpp.i
+
+.PHONY : algortihms/gloutonSolver.i
+
+# target to preprocess a source file
+algortihms/gloutonSolver.cpp.i:
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.i
+.PHONY : algortihms/gloutonSolver.cpp.i
+
+algortihms/gloutonSolver.s: algortihms/gloutonSolver.cpp.s
+
+.PHONY : algortihms/gloutonSolver.s
+
+# target to generate assembly for a file
+algortihms/gloutonSolver.cpp.s:
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.s
+.PHONY : algortihms/gloutonSolver.cpp.s
 
 algortihms/instanceGenrator.o: algortihms/instanceGenrator.cpp.o
 
@@ -246,7 +273,7 @@ algortihms/instanceGenrator.o: algortihms/instanceGenrator.cpp.o
 
 # target to build an object file
 algortihms/instanceGenrator.cpp.o:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o
 .PHONY : algortihms/instanceGenrator.cpp.o
 
 algortihms/instanceGenrator.i: algortihms/instanceGenrator.cpp.i
@@ -255,7 +282,7 @@ algortihms/instanceGenrator.i: algortihms/instanceGenrator.cpp.i
 
 # target to preprocess a source file
 algortihms/instanceGenrator.cpp.i:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.i
 .PHONY : algortihms/instanceGenrator.cpp.i
 
 algortihms/instanceGenrator.s: algortihms/instanceGenrator.cpp.s
@@ -264,7 +291,7 @@ algortihms/instanceGenrator.s: algortihms/instanceGenrator.cpp.s
 
 # target to generate assembly for a file
 algortihms/instanceGenrator.cpp.s:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.s
 .PHONY : algortihms/instanceGenrator.cpp.s
 
 glpk/glpk_interface.o: glpk/glpk_interface.cpp.o
@@ -273,7 +300,7 @@ glpk/glpk_interface.o: glpk/glpk_interface.cpp.o
 
 # target to build an object file
 glpk/glpk_interface.cpp.o:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o
 .PHONY : glpk/glpk_interface.cpp.o
 
 glpk/glpk_interface.i: glpk/glpk_interface.cpp.i
@@ -282,7 +309,7 @@ glpk/glpk_interface.i: glpk/glpk_interface.cpp.i
 
 # target to preprocess a source file
 glpk/glpk_interface.cpp.i:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.i
 .PHONY : glpk/glpk_interface.cpp.i
 
 glpk/glpk_interface.s: glpk/glpk_interface.cpp.s
@@ -291,7 +318,7 @@ glpk/glpk_interface.s: glpk/glpk_interface.cpp.s
 
 # target to generate assembly for a file
 glpk/glpk_interface.cpp.s:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.s
 .PHONY : glpk/glpk_interface.cpp.s
 
 main.o: main.cpp.o
@@ -300,7 +327,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/exec.dir/build.make sources/CMakeFiles/exec.dir/main.cpp.o
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/exec.dir/build.make sources/CMakeFiles/exec.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -309,7 +336,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/exec.dir/build.make sources/CMakeFiles/exec.dir/main.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/exec.dir/build.make sources/CMakeFiles/exec.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -318,7 +345,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/exec.dir/build.make sources/CMakeFiles/exec.dir/main.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/exec.dir/build.make sources/CMakeFiles/exec.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 utils/FileManager.o: utils/FileManager.cpp.o
@@ -327,7 +354,7 @@ utils/FileManager.o: utils/FileManager.cpp.o
 
 # target to build an object file
 utils/FileManager.cpp.o:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/FileManager.cpp.o
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/FileManager.cpp.o
 .PHONY : utils/FileManager.cpp.o
 
 utils/FileManager.i: utils/FileManager.cpp.i
@@ -336,7 +363,7 @@ utils/FileManager.i: utils/FileManager.cpp.i
 
 # target to preprocess a source file
 utils/FileManager.cpp.i:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/FileManager.cpp.i
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/FileManager.cpp.i
 .PHONY : utils/FileManager.cpp.i
 
 utils/FileManager.s: utils/FileManager.cpp.s
@@ -345,8 +372,35 @@ utils/FileManager.s: utils/FileManager.cpp.s
 
 # target to generate assembly for a file
 utils/FileManager.cpp.s:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/FileManager.cpp.s
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/FileManager.cpp.s
 .PHONY : utils/FileManager.cpp.s
+
+utils/Tui.o: utils/Tui.cpp.o
+
+.PHONY : utils/Tui.o
+
+# target to build an object file
+utils/Tui.cpp.o:
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/Tui.cpp.o
+.PHONY : utils/Tui.cpp.o
+
+utils/Tui.i: utils/Tui.cpp.i
+
+.PHONY : utils/Tui.i
+
+# target to preprocess a source file
+utils/Tui.cpp.i:
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/Tui.cpp.i
+.PHONY : utils/Tui.cpp.i
+
+utils/Tui.s: utils/Tui.cpp.s
+
+.PHONY : utils/Tui.s
+
+# target to generate assembly for a file
+utils/Tui.cpp.s:
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(MAKE) -f sources/CMakeFiles/core.dir/build.make sources/CMakeFiles/core.dir/utils/Tui.cpp.s
+.PHONY : utils/Tui.cpp.s
 
 # Help Target
 help:
@@ -368,6 +422,9 @@ help:
 	@echo "... algortihms/TreeGenerator.o"
 	@echo "... algortihms/TreeGenerator.i"
 	@echo "... algortihms/TreeGenerator.s"
+	@echo "... algortihms/gloutonSolver.o"
+	@echo "... algortihms/gloutonSolver.i"
+	@echo "... algortihms/gloutonSolver.s"
 	@echo "... algortihms/instanceGenrator.o"
 	@echo "... algortihms/instanceGenrator.i"
 	@echo "... algortihms/instanceGenrator.s"
@@ -380,6 +437,9 @@ help:
 	@echo "... utils/FileManager.o"
 	@echo "... utils/FileManager.i"
 	@echo "... utils/FileManager.s"
+	@echo "... utils/Tui.o"
+	@echo "... utils/Tui.i"
+	@echo "... utils/Tui.s"
 .PHONY : help
 
 
@@ -391,6 +451,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -167,7 +167,7 @@ TEST(LinearProgrammingSolver, glpk_solver) {
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	delete atei;
 }
@@ -183,7 +183,7 @@ TEST(LinearProgrammingSolver, extractBeta_i) {
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(2);
 
@@ -208,7 +208,7 @@ TEST(LinearProgrammingSolver, extractBeta_i2) {
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(3);
 
@@ -233,7 +233,7 @@ TEST(LinearProgrammingSolver, makeBinaryTree) {
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(2);
 
@@ -262,7 +262,7 @@ TEST(LinearProgrammingSolver, makeBinaryTree2) {
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(3);
 
@@ -298,7 +298,7 @@ TEST(LinearProgrammingSolver, PI_r) {
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(3);
 
@@ -343,7 +343,7 @@ TEST(LinearProgrammingSolver, PI_f) {
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(3);
 
@@ -389,7 +389,7 @@ TEST(LinearProgrammingSolver, findBestWalkId) {
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(3);
 
@@ -399,7 +399,7 @@ TEST(LinearProgrammingSolver, findBestWalkId) {
 
 	vector<int> ids;
 
-	solver.findBestWalkId(binaryTree, &ids, 4, false);
+	solver.findBestWalkId(binaryTree, &ids, 4, false, nullptr);
 
 
 	ASSERT_EQ(ids[0], 1);
@@ -420,13 +420,13 @@ TEST(LinearProgrammingSolver, findBestWalk) {
 			(tree, 2, 1);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(3);
 
 	Tree<Tupple<int,double>> *binaryTree = solver.makeBinaryTree(tree, matrix);
 
-	vector<Edge<int> *> edges = solver.findBestWalk(tree, binaryTree, 4);
+	vector<Edge<int> *> edges = solver.findBestWalk(tree, binaryTree, 4, nullptr);
 
 
 	ASSERT_EQ(edges[0]->getId(), 1);
@@ -447,7 +447,7 @@ TEST(LinearProgrammingSolver, solver) {
 			(tree, 2, 4);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver(atei);
+    solver.solver(atei, nullptr);
 
 	delete atei;
 }
@@ -467,7 +467,7 @@ TEST(Pi_f, NullTreeErrors) {
 			(tree, 4, 4);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(atei);
+    solver.solver2(atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(tree->numberOfEdges());
 
@@ -502,7 +502,7 @@ TEST(PI_f, problem1) {
 
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver2(&atei);
+    solver.solver2(&atei, nullptr);
 
 	double *matrix = solver.extractBeta_i(3);
 
@@ -544,7 +544,7 @@ TEST(solver, problem2) {
 			(tree, 1, 4);
 
 	LinearProgrammingSolver solver = LinearProgrammingSolver();
-	solver.solver(&atei);
+    solver.solver(&atei, nullptr);
 }
 
 TEST(optimalSolver, generateWalks) {

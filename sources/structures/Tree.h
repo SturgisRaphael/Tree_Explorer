@@ -10,7 +10,6 @@
 #include <ostream>
 #include "Edge.h"
 #include "Tupple.h"
-#include "../legacy/Tree.h"
 #include "Tree.h"
 
 #define MAX_BATTERY 10000
@@ -24,7 +23,10 @@ protected:
 	string label = "no label";		    ///label for current node
 	Edge<T>* edgeToParent = nullptr;	///pointer to parent if he exists
 	vector<Edge<T>*> edges;			    ///list of child nodes
+	long value;
 	double PI_r[MAX_BATTERY]{};
+
+protected:
 	double PI_f[MAX_BATTERY]{};
 
 	Tupple<int, int> PI_r_origin[MAX_BATTERY];
@@ -111,6 +113,14 @@ public:
 		return os;
 	}
 
+	long getValue() const {
+		return value;
+	}
+
+	void setValue(long value) {
+		this->value = value;
+	}
+
 	/**
 	 * Simple getter
 	 * @param index
@@ -177,6 +187,14 @@ public:
 		return child;
 	}
 
+	void addChild(Tree<T>* child, int *id){
+		auto *edge = new Edge<T>(this, child, *id);
+		*id += 1;
+
+		child->setEdgeToParent(edge);
+		this->edges.push_back(edge);
+	}
+
 	Tree<T> *addChildBin(string label, long id, T weight, T nullWeight) {
 		for (Edge<T> *c : this->edges)
 			if (c->getChild()->getLabel() == label)
@@ -211,6 +229,40 @@ public:
 			}
 		}
 	}
+
+    Tree<T> *addChildBinSearchTree(long value, int* id, int* name) {
+        if(edges.size() == 0)
+        {
+            auto *child = new Tree<T>(index, to_string((*name)++), nullptr);
+			child->setValue(value);
+            auto *edge = new Edge<T>(this, child, *id);
+			*id += 1;
+            child->setEdgeToParent(edge);
+            this->edges.push_back(edge);
+            return child;
+        } else if (edges.size() == 1)
+		{
+			if((this->value < value && this->edges[0]->getChild()->value < value) || this->value > value && (this->edges[0]->getChild()->value > value))
+				return this->edges[0]->getChild()->addChildBinSearchTree(value, id, name);
+			else
+			{
+				auto *child = new Tree<T>(index, to_string((*name)++), nullptr);
+				child->setValue(value);
+				auto *edge = new Edge<T>(this, child, *id);
+				*id += 1;
+				child->setEdgeToParent(edge);
+				this->edges.push_back(edge);
+				return child;
+			}
+		}
+		else
+		{
+			if((this->value < value && this->edges[0]->getChild()->value < value) || (this->value > value && this->edges[0]->getChild()->value > value))
+				return this->edges[0]->getChild()->addChildBinSearchTree(value, id, name);
+			else
+				return this->edges[1]->getChild()->addChildBinSearchTree(value, id, name);
+		}
+    }
 
 	Tree<int> *findChild(string label)
 	{

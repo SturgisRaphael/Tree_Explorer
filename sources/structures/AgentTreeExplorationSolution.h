@@ -18,8 +18,9 @@ using namespace std;
 
 class AgentTreeExplorationSolution {
 private:
-	vector<vector<int>> walks;  ///walks used in solution
+	vector<vector<Edge<int> *>> walks;  ///walks used in solution
 	int numberOfEdgesExplored;  ///number of edges explored
+	int numberOfEdgesDoublellyExplored;
 public:
 	/**
 	 * Constructor
@@ -46,7 +47,7 @@ public:
 	 * Simple getter
 	 * @return walks
 	 */
-	const vector<vector<int>> &getWalks() const {
+	const vector<vector<Edge<int> *>> &getWalks() const {
 		return walks;
 	}
 
@@ -54,7 +55,7 @@ public:
 	 * Simple setter
 	 * @param walks
 	 */
-	void setWalks(const vector<vector<int>> &walks) {
+	void setWalks(const vector<vector<Edge<int> *>> &walks) {
 		AgentTreeExplorationSolution::walks = walks;
 	}
 
@@ -80,6 +81,55 @@ public:
 		   << " numberOfEdgesExplored: " << solution.numberOfEdgesExplored <<"\n";
 		return os;
 	}
+
+	AgentTreeExplorationSolution(vector<vector<Edge<int> *>> vect) {
+		this->walks = vect;
+		numberOfEdgesExplored = 0;
+		numberOfEdgesDoublellyExplored = 0;
+		vector<int> ids;
+		vector<int> doubleExplored;
+		for(vector<Edge<int> *> edges : vect)
+		{
+			for(Edge<int> * edge : edges)
+			{
+				bool hasBeenSeen = false;
+				for(int id: ids)
+				{
+					if(id == edge->getId())
+					{
+						hasBeenSeen = true;
+                        bool hasBeenSeen2 = false;
+						for(int d: doubleExplored)
+                        {
+                            if(d == edge->getId())
+                            {
+                                hasBeenSeen2 = true;
+                                break;
+                            }
+                        }
+                        if(!hasBeenSeen2)
+                        {
+                            doubleExplored.push_back(edge->getId());
+                            numberOfEdgesDoublellyExplored++;
+                        }
+					}
+				}
+				if(!hasBeenSeen)
+				{
+					ids.push_back(edge->getId());
+					numberOfEdgesExplored++;
+				}
+			}
+		}
+	}
+
+    int getNumberOfEdgesDoublellyExplored() const {
+        return numberOfEdgesDoublellyExplored;
+    }
+
+    void setNumberOfEdgesDoublellyExplored(int numberOfEdgesDoublellyExplored) {
+        AgentTreeExplorationSolution::numberOfEdgesDoublellyExplored = numberOfEdgesDoublellyExplored;
+    }
 };
 
 

@@ -25,8 +25,6 @@ tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o:
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/algortihms/LinearProgrammingSolver.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/glpk/glpk_interface.h
-tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/legacy/BinaryTree.h
-tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/legacy/Tree.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/structures/AgentTreeExplorationInstance.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/LinearProgrammingSolver_test.cpp.o: ../sources/structures/Edge.h
@@ -59,8 +57,6 @@ tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o: ../tests/
 tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o: ../sources/algortihms/TreeGenerator.h
-tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o: ../sources/legacy/BinaryTree.h
-tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o: ../sources/legacy/Tree.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o: ../sources/structures/Edge.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o: ../sources/structures/Tree.h
 tests/CMakeFiles/runUnitTests.dir/Algorithms/TreeGenerator_test.cpp.o: ../sources/structures/Tupple.h
@@ -137,8 +133,6 @@ tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/lib/googl
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
-tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../sources/legacy/BinaryTree.h
-tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../sources/legacy/Tree.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../sources/structures/Edge.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../sources/structures/Tree.h
 tests/CMakeFiles/runUnitTests.dir/structures/Tree_test.cpp.o: ../sources/structures/Tupple.h
@@ -166,8 +160,6 @@ tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../tests/lib/goo
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
-tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/legacy/BinaryTree.h
-tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/legacy/Tree.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/structures/AgentTreeExplorationInstance.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/structures/Edge.h
@@ -175,4 +167,36 @@ tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/struc
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/structures/Tupple.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../sources/utils/FileManager.h
 tests/CMakeFiles/runUnitTests.dir/utils/FileManager_test.cpp.o: ../tests/utils/FileManager_test.cpp
+
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-death-test.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-message.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-param-test.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-printers.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-test-part.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/gtest_prod.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-linked_ptr.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-param-util-generated.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../sources/algortihms/TreeGenerator.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../sources/structures/AgentTreeExplorationInstance.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../sources/structures/Edge.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../sources/structures/Tree.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../sources/structures/Tupple.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../sources/utils/FileManager.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../sources/utils/Tui.h
+tests/CMakeFiles/runUnitTests.dir/utils/tui_test.cpp.o: ../tests/utils/tui_test.cpp
 

@@ -6,6 +6,7 @@
 #include <queue>
 #include <sstream>
 #include <vector>
+#include <cmath>
 #include "TreeGenerator.h"
 
 vector<Tree<int>*> TreeGenerator::generateBinaryTrees(int depth) {
@@ -115,3 +116,65 @@ void TreeGenerator::addBranch(int k, Tree<int> *tree, int index) {
 		currentNode = currentNode->addChild(s);
 	}
 }
+
+int global = 0;
+
+Tree<int>* TreeGenerator::generateEquiProbabelBinaryTree(int number_of_vertex, int* index, int *name) {
+	if(number_of_vertex == 0)
+		return nullptr;
+	else if(number_of_vertex == 1)
+		return new Tree<int>(index, to_string((*name)++));
+	else{
+		Tree<int>* root = new Tree<int>(index, to_string((*name)++));
+		vector<int> catalans = catalan(number_of_vertex );
+		srand(time(NULL));
+        auto maximum = 0;
+        for(int i = 0; i < number_of_vertex; i++)
+            maximum += catalans[i] * catalans[number_of_vertex - 1 - i];
+
+        int random = (int)rand() % maximum;
+		int cumul = 0;
+		for(int i = 0; i < number_of_vertex; i++) {
+			cumul += catalans[i] * catalans[number_of_vertex - 1 - i];
+			if (random <= cumul) {
+			    if(i > 0)
+				    root->addChild(generateEquiProbabelBinaryTree(i, index, name), index);
+			    if(number_of_vertex - i - 1> 0)
+					root->addChild(generateEquiProbabelBinaryTree(number_of_vertex - i - 1, index, name), index);
+				break;
+			}
+		}
+		return root;
+	}
+}
+
+vector<int> TreeGenerator::catalan(int vertex) {
+	vector<int> catalans = {1,1};
+	for(int i = 2; i <= vertex; i++)
+	{
+        int sum = 0;
+        for(int j = 0; j < i; j++)
+            sum += catalans[j] * catalans[i - 1 - j];
+
+		catalans.push_back(sum);
+	}
+	return catalans;
+}
+
+Tree<int> *TreeGenerator::generateRandomTree(int number_of_vertex) {
+	vector<long> randoms;
+	int random;
+	random = static_cast<int>(pow(number_of_vertex, 4));
+	for(int i = 0; i < number_of_vertex; i++)
+	{
+		randoms.push_back(rand()%random);
+	}
+	int index = 0, name = 0;
+	Tree<int> * root = new Tree<int>(&index, to_string(name++));
+	root->setValue(randoms[0]);
+	for(int i = 1; i < randoms.size(); i++)
+		root->addChildBinSearchTree(randoms[i], &index, &name);
+
+    return root;
+}
+

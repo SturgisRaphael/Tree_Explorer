@@ -6,5 +6,5 @@ CXX_FLAGS = -g    -Wall -Wshadow -Werror -DGTEST_HAS_PTHREAD=1 -fexceptions -Wex
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/lib/googletest-master/googlemock/include -I/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/lib/googletest-master/googlemock -isystem /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/lib/googletest-master/googletest/include -I/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests/lib/googletest-master/googletest 
+CXX_INCLUDES = -isystem /home/raphael/University/Master-1/Stage/Tree_Explorer/tests/lib/googletest-master/googlemock/include -I/home/raphael/University/Master-1/Stage/Tree_Explorer/tests/lib/googletest-master/googlemock -isystem /home/raphael/University/Master-1/Stage/Tree_Explorer/tests/lib/googletest-master/googletest/include -I/home/raphael/University/Master-1/Stage/Tree_Explorer/tests/lib/googletest-master/googletest 
 

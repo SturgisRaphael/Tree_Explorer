@@ -1,4 +1,4 @@
-# Install script for directory: /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/tests
+# Install script for directory: /home/raphael/University/Master-1/Stage/Tree_Explorer/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/raphael/Master-informatique/M1/Stage/Tree_Explorer/cmake-build-debug/tests/lib/googletest-master/cmake_install.cmake")
+  include("/home/raphael/University/Master-1/Stage/Tree_Explorer/cmake-build-debug/tests/lib/googletest-master/cmake_install.cmake")
 
 endif()
 

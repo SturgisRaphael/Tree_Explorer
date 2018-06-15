@@ -76,7 +76,7 @@ double glpk_interface::getColPrim(int index) {
 }
 
 glpk_interface::~glpk_interface() {
-	glp_delete_prob(root);
+	//glp_delete_prob(root);
 	glp_free_env();
 }
 

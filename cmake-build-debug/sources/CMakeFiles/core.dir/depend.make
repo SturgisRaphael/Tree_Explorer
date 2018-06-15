@@ -4,8 +4,6 @@
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources/algortihms/LinearProgrammingSolver.cpp
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources/algortihms/LinearProgrammingSolver.h
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources/glpk/glpk_interface.h
-sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources/legacy/BinaryTree.h
-sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources/legacy/Tree.h
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources/structures/AgentTreeExplorationInstance.h
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
 sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources/structures/Edge.h
@@ -15,17 +13,24 @@ sources/CMakeFiles/core.dir/algortihms/LinearProgrammingSolver.cpp.o: ../sources
 
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/algortihms/TreeGenerator.cpp
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/algortihms/TreeGenerator.h
-sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/legacy/BinaryTree.h
-sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/legacy/Tree.h
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/structures/Edge.h
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/structures/Tree.h
 sources/CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o: ../sources/structures/Tupple.h
 
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/algortihms/LinearProgrammingSolver.h
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/algortihms/gloutonSolver.cpp
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/algortihms/gloutonSolver.h
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/glpk/glpk_interface.h
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/structures/AgentTreeExplorationInstance.h
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/structures/Edge.h
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/structures/Tree.h
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/structures/Tripple.h
+sources/CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o: ../sources/structures/Tupple.h
+
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/algortihms/TreeGenerator.h
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/algortihms/instanceGenrator.cpp
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/algortihms/instanceGenrator.h
-sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/legacy/BinaryTree.h
-sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/legacy/Tree.h
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/structures/AgentTreeExplorationInstance.h
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/structures/Edge.h
 sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/structures/Tree.h
@@ -34,8 +39,6 @@ sources/CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o: ../sources/struct
 sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o: ../sources/glpk/glpk_interface.cpp
 sources/CMakeFiles/core.dir/glpk/glpk_interface.cpp.o: ../sources/glpk/glpk_interface.h
 
-sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/legacy/BinaryTree.h
-sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/legacy/Tree.h
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/structures/AgentTreeExplorationInstance.h
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/structures/Edge.h
@@ -43,4 +46,17 @@ sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/structures/Tree.
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/structures/Tupple.h
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/utils/FileManager.cpp
 sources/CMakeFiles/core.dir/utils/FileManager.cpp.o: ../sources/utils/FileManager.h
+
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/algortihms/LinearProgrammingSolver.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/algortihms/TreeGenerator.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/glpk/glpk_interface.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/structures/AgentTreeExplorationInstance.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/structures/AgentTreeExplorationSolution.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/structures/Edge.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/structures/Tree.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/structures/Tripple.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/structures/Tupple.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/utils/FileManager.h
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/utils/Tui.cpp
+sources/CMakeFiles/core.dir/utils/Tui.cpp.o: ../sources/utils/Tui.h
 

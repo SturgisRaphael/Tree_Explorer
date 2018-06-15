@@ -1,4 +1,4 @@
-# Install script for directory: /home/raphael/Master-informatique/M1/Stage/Tree_Explorer/sources
+# Install script for directory: /home/raphael/University/Master-1/Stage/Tree_Explorer/sources
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

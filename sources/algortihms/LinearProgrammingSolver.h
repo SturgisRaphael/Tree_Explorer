@@ -18,11 +18,12 @@ private:
 	friend class Tree<int>;
 	glpk_interface lp;
 	int p, m;
+	vector<double> weight;
 
 public:
 	glpk_interface &getLp();
 
-	vector<vector<Edge<int> *>> solver(AgentTreeExplorationInstance *atei);
+	AgentTreeExplorationSolution solver(AgentTreeExplorationInstance *atei, double *frac);
 	AgentTreeExplorationSolution optiSolver(AgentTreeExplorationInstance *atei);
 	AgentTreeExplorationSolution optiFracSolver(AgentTreeExplorationInstance *atei);
 	void integerSolver(AgentTreeExplorationInstance *atei, vector<vector<Edge<int> *>> walks);
@@ -42,9 +43,10 @@ public:
 
 	Tree<Tupple<int, double>> *makeBinaryTree(Tree<int> *tree, double *matrix);
 
-	vector<Edge<int> *> findBestWalk(Tree<int> *referenceTree, Tree<Tupple<int, double>> *binaryTree, int battery);
-	void findBestWalkId(Tree<Tupple<int, double>> *binaryTree, vector<int> *ids, int battery,
-						bool returnToNode);
+	vector<Edge<int> *>
+    findBestWalk(Tree<int> *referenceTree, Tree<Tupple<int, double>> *binaryTree, int battery, double *pInt);
+	void
+	findBestWalkId(Tree<Tupple<int, double>> *binaryTree, vector<int> *ids, int battery, bool returnToNode);
 
 	void tmpFunc(Tree<Tupple<int, double>> *binaryTree, int battery);//TODO: remove
 
@@ -65,6 +67,10 @@ public:
 	void printWalk(vector<Edge<int> *> vector);
 
 	void initializeGlpkInteger(int p, int m, int agents);
+
+	vector<vector<Edge<int> *>> selectAleat(vector<vector<Edge<int> *>> walks, vector<double> proba, int k);
+
+	int doubellyCovered();
 };
 
 template<class T>

@@ -7,7 +7,7 @@
 #include "../../sources/utils/FileManager.h"
 
 TEST(Read, test1) {
-	AgentTreeExplorationInstance atei =
+	AgentTreeExplorationInstance *atei =
 			FileManager::readInstanceFromFile("../data/testFiles/test1.1.txt");
 
 	int index = 0;
@@ -20,12 +20,12 @@ TEST(Read, test1) {
 	tree->getChild("3")->addChild("3.2");
 
 	AgentTreeExplorationInstance comp =
-			AgentTreeExplorationInstance(tree, 3, 2);
-	ASSERT_EQ(comp, atei);
+			AgentTreeExplorationInstance(tree, 4, 4);
+	ASSERT_EQ(comp, *atei);
 }
 
 TEST(Read, test2){
-	AgentTreeExplorationInstance atei =
+	AgentTreeExplorationInstance *atei =
 			FileManager::readInstanceFromFile("../data/testFiles/test1.2.txt");
 
 
@@ -44,12 +44,12 @@ TEST(Read, test2){
 	tree->getChild("4")->addChild("4.1");
 	AgentTreeExplorationInstance comp =
 			AgentTreeExplorationInstance(tree, 3, 5);
-	ASSERT_TRUE(comp == atei);
+	ASSERT_EQ(comp ,*atei);
 }
 
 
 TEST(Read, test3) {
-	AgentTreeExplorationInstance atei =
+	AgentTreeExplorationInstance *atei =
 			FileManager::readInstanceFromFile("../data/testFiles/test1.3.txt");
 
 	int index = 0;
@@ -57,7 +57,7 @@ TEST(Read, test3) {
 	Tree<int>* tree = new Tree<int>(&index, "root");
 	AgentTreeExplorationInstance comp =
 			AgentTreeExplorationInstance(tree, 1, 1);
-	ASSERT_TRUE(comp == atei);
+	ASSERT_TRUE(comp == *atei);
 }
 
 TEST(Read, bad_file_1) {
@@ -86,8 +86,8 @@ TEST(Write, instance1) {
 
 	FileManager::writeInstanceToFile("../data/testFiles/test2.1.txt", &comp);
 
-	AgentTreeExplorationInstance atei = FileManager::readInstanceFromFile("../data/testFiles/test2.1.txt");
+	AgentTreeExplorationInstance *atei = FileManager::readInstanceFromFile("../data/testFiles/test2.1.txt");
 
-	ASSERT_EQ(comp, atei);
+	ASSERT_EQ(comp, *atei);
 
 }

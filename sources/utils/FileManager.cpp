@@ -8,7 +8,7 @@
 #include "FileManager.h"
 #include "../structures/Tree.h"
 
-AgentTreeExplorationInstance FileManager::readInstanceFromFile(string path) {
+AgentTreeExplorationInstance* FileManager::readInstanceFromFile(string path) {
 	int k = -1, b = -1;
 	std::ifstream infile(path);
 	std::string line;
@@ -64,7 +64,7 @@ AgentTreeExplorationInstance FileManager::readInstanceFromFile(string path) {
 	    }
     }
 
-	return AgentTreeExplorationInstance(root, k, b);
+	return new AgentTreeExplorationInstance(root, k, b);
 }
 
 void FileManager::writeInstanceToFile(string path,

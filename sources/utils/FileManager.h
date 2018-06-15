@@ -18,7 +18,7 @@ public:
 	 * @param path of the file
 	 * @return The instance
 	 */
-	static AgentTreeExplorationInstance readInstanceFromFile(string path);
+	static AgentTreeExplorationInstance *readInstanceFromFile(string path);
 
 	/**
 	 * Writes instances of the problem to file system

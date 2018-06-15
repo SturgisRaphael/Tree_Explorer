@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/core.dir/glpk/glpk_interface.cpp.o"
   "CMakeFiles/core.dir/algortihms/TreeGenerator.cpp.o"
   "CMakeFiles/core.dir/algortihms/instanceGenrator.cpp.o"
+  "CMakeFiles/core.dir/algortihms/gloutonSolver.cpp.o"
+  "CMakeFiles/core.dir/utils/Tui.cpp.o"
   "libcore.pdb"
   "libcore.a"
 )
